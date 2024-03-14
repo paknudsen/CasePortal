@@ -36,6 +36,14 @@
 		<PlatformTarget>AnyCPU</PlatformTarget>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+	</PropertyGroup>
+
 	<Target Name="GulpBuildCP" BeforeTargets="Build">
 		<Message Text="Running gulp task 'clean', $(TargetFramework)" Importance="high" />
 		<Exec Command="node_modules\.bin\gulp clean" WorkingDirectory="$(ProjectDir)" />

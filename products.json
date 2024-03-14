@@ -1,0 +1,752 @@
+ [
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3221941",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/77df1d27-5245-4c5d-8c04-076d27c5c0ba_8.jpeg",
+        "productId" : 3221941,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1426_0e9c312f-8e11-4266-8e22-2e0cf7a8e771IsaDora_logo_tagline_2023_black50px.png",
+        "name" : "IsaDora Wonder Nail Polish 199 Glacé 6ml",
+        "finalSalesPrice" : 56.8,
+        "shortDescription" : "Wonder Nail Polish er en holdbar, hurtigtørkende og blank neglelakk.",
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3105482",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/45c59a8a-dce5-431d-a5ab-0773e21ad38d_1.jpg",
+        "productId" : 3105482,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/91_1.png",
+        "name" : "Clinique Beyond Perfecting Foundation + Concealer CN 20 Fair 30ml",
+        "shortDescription" : "Foundation og concealer i ett, som gir en naturlig, mer enn perfekt utseende, som holder hele dagen. Selv gjennom svette og fukt.",
+        "finalSalesPrice" : 391.2,
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3216059",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/bd316cf5-2e89-45c4-8edf-0eae5a83423c_1.jpeg",
+        "productId" : 3216059,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1593_ab6071aa-d89e-452a-a567-8cd18e3bd097Updated_David_Beckham_Fragrances.png rikitg.png",
+        "name" : "David Beckham Respect Shower Gel 200ml",
+        "shortDescription" : "Respect Shower Gel er en dusjsåpe for menn. ",
+        "finalSalesPrice" : 180.0,
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3246446",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/88b241d3-8dcb-4e98-a444-027a4b037bcb_2.jpeg",
+        "productId" : 3246446,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/132_dac7dd3c-e34a-4f4f-be46-7a9f07e24a73bM_Logo_POG (002).jpg",
+        "name" : "bareMinerals BarePro 16hr Skin-Perfecting Powder Foundation Fair 10 Neutral 8g",
+        "shortDescription" : "BarePro 16hr Skin-Perfecting Powder Foundation er et kompaktpudder som gir full dekk med 16 timers holdbarhet. ",
+        "finalSalesPrice" : 432.0,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3096213",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/dfa29f4f-2c16-486d-91e5-027acfd39c34_1.jpg",
+        "productId" : 3096213,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/348_5551bc90-afed-467c-a153-35f2024178f520px_KM_logo_Black_Mtekst copy.png",
+        "name" : "Kevin.Murphy Repair-Me.Rinse 250ml",
+        "shortDescription" : "Repair-Me.Rinse er en rekonstruerende og reparerende balsam som kombinerer superfoodproteiner fra grønne erter, med vitaminer fra acai, aloe vera-ekstrakter og shea butter for å gi håret fuktighet, styrke og glans. ",
+        "finalSalesPrice" : 319.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3231451",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/b673e342-9c45-4c56-a79a-0796f5ad5020_7.jpeg",
+        "productId" : 3231451,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/247_d7173a64-0074-44aa-9c21-6bbfebdf11fe180ker.png",
+        "name" : "Kérastase Chroma Absolu Masque Chromafiller Mask 200ml",
+        "shortDescription" : "Kérastase Masque Chroma Filler er en rik, pleiende hårmaske mot porøst hår, utviklet for alle typer sensibilisert eller skadet, fargebehandlet hår, hovedsakelig tilpasset middels til tykt hår. ",
+        "finalSalesPrice" : 460.8,
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3255393",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/586c1ff9-8fb9-40fa-9daf-02880cbe429d_1.jpeg",
+        "productId" : 3255393,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/270_1540daec-18e9-4eab-8d98-a880e5d71a03logo_opi_cia - Copy.png",
+        "name" : "OPI Nature Strong Shore Is Something! NAT019 15ml",
+        "shortDescription" : "En farge som er klar til å ri på bølgene. Denne holdbare neglelakken av naturlig opprinnelse vil ikke blekne.",
+        "finalSalesPrice" : 188.0,
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3126020",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/2db7d24d-dfa0-48fd-b78d-028d25f591a1_3.jpeg",
+        "productId" : 3126020,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/224_fd1f7570-301e-4748-af53-c764000b1041essie_VECTORLOGO_grey.png rikitg.png",
+        "name" : "Essie Celebrating Moments #516 Nailet-It! 13,5ml",
+        "shortDescription" : "Mission accomplished! Denne mesterlige, dype vinrøde nyansen bekrefter at du har gjort noe riktig.",
+        "finalSalesPrice" : 95.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3198857",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/a54875fe-1716-4012-95fc-0eccb7b012aa_1.jpeg",
+        "productId" : 3198857,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1426_0e9c312f-8e11-4266-8e22-2e0cf7a8e771IsaDora_logo_tagline_2023_black50px.png",
+        "name" : "IsaDora Perfect Blush 04 Rose Perfection 4,5g",
+        "finalSalesPrice" : 80.0,
+        "shortDescription" : "IsaDora Perfect Blush er en fløyelsaktige pudderblush som gir en silkeaktig farge.",
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3198810",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/1a8cb870-fa23-4a17-a66f-0ed777db4530_2.jpeg",
+        "productId" : 3198810,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/379_0e4fd2d1-e0a0-44d7-ad4f-ad0b81ce57d8CARTOUCHE-LOGO-CLARINS_P200C_h35px.png",
+        "name" : "Clarins Everlasting Concealer 02 Light Medium 12ml",
+        "shortDescription" : "Everlasting Concealer er concealeren for de som ønsker høy dekkevne og langvaring hold. Ikke bare er den svetteresistent og smitter ikke av, den er rett og slett #Lifeproof!",
+        "finalSalesPrice" : 239.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3134262",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/758ec3f9-1d94-40bc-a096-07aa93c2d160_1.jpeg",
+        "productId" : 3134262,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/736_1692e926-2a35-4333-82a5-b745ebe03304Logo2.png",
+        "name" : "Piz Buin Allergy Sun Sensitive Skin Lotion SPF30 200ml",
+        "shortDescription" : "Piz Buin Allergy solkrem er utviklet i samarbeid med dermatologer for å beskytte solsensitiv hud.",
+        "finalSalesPrice" : 204.0,
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3214704",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/4c74374e-1e2f-4324-856f-07b3398e0c97_1.jpeg",
+        "productId" : 3214704,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1552_3e81939f-bc0a-45b2-bfdb-bbfcb340398dCOSRX_LOGO_Final.png riktig.png",
+        "name" : "COSRX Ultimate Nourishing Rice Overnight Spa Mask 60ml",
+        "shortDescription" : "Ultimate Nourishing Rice Overnight Spa Mask er en nærende ansiktsmaske med risekstrakt som tilfører dyp og intens fuktighet, og niacinamide som bidrar til en jevnere og klarere hud.",
+        "finalSalesPrice" : 177.6,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3218130",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/78ac1ce8-7eee-4fb5-a961-0299856465fa_27.jpeg",
+        "productId" : 3218130,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/62_2.png",
+        "name" : "Biotherm Blue Retinol Serum Night 30ml",
+        "shortDescription" : "Biotherm Blue Retinol Serum Night er et avansert antiageing-serum som synlig reduserer rynker, gir jevn hud og fremmer hudens fornyelse. Huden etterlates myk og smidig.",
+        "finalSalesPrice" : 527.2,
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3140668",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/7f84a85b-9bf3-4b92-8ec3-029fec1decc8_4.jpeg",
+        "productId" : 3140668,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/310_3b8d1266-78f2-44fe-bbd3-53614f88565715_MAC_logo-big_black.png",
+        "name" : "MAC Cosmetics Studio Fix Powder Plus Foundation Nc30 15g",
+        "finalSalesPrice" : 271.2,
+        "shortDescription" : "Studio Fix Powder Plus Foundation er en matt, fast foundation i pudderform, som dekker urenheter, pigmentforandringer, porer og røde partier, så du får en glatt og feilfri finish. Pudderet har en medium til full dekkevne. ",
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3137197",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/72cd667f-90ad-42fb-b17e-09e2ae98698e_4.jpeg",
+        "productId" : 3137197,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/379_0e4fd2d1-e0a0-44d7-ad4f-ad0b81ce57d8CARTOUCHE-LOGO-CLARINS_P200C_h35px.png",
+        "name" : "Clarins Everlasting Youth Fluid Foundation 108 Sand 30ml",
+        "shortDescription" : "Everlasting Youth Fluid Foundation er en flytende foundation som gjenoppretter hudens glød og ungdommelighet. Den skjuler aldringsflekker og urenheter, og ved hjelp av røde alger og arganolje holder den også huden din hydrert gjennom hele dagen. Huden vil være oppstrammet, glødende, glatt og strålende.",
+        "finalSalesPrice" : 335.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3234504",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/13efd605-5fc8-41a3-a635-0eef131da6c2_11.jpeg",
+        "productId" : 3234504,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1637_d4728582-48f1-4dcc-bc65-5769e8bdbc65Brand_Signature_Mark_SilverBlack-(1)H50.jpg",
+        "name" : "It Cosmetics Your Skin But Better Foundation + Skincare 53 Rich Neutral 30ml",
+        "shortDescription" : "IT Cosmetics Your Skin But Better Hydrating Foundation + Skincare er en byggbar, middels dekkende foundationen som bidrar til å redusere synligheten av porer og ujevnheter, samtidig som den tilfører huden fuktighet og sitter hele dagen med en naturlig strålende finish. ",
+        "finalSalesPrice" : 264.0,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3101084",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/24f61b75-8d6a-43ca-aa41-0eef27cb287d_1.jpeg",
+        "productId" : 3101084,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/89_4141125f-423c-448c-adae-1a5e198d1ca7Cacharel_Logo.png",
+        "name" : "Cacharel Noa Eau De Toilette Spray 30ml",
+        "shortDescription" : "En avslappet, frisk og ungdommelig duft med stemning av mildhet og ro.",
+        "finalSalesPrice" : 212.0,
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3224402",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/a4235790-97bf-436b-b779-07d28b1f1d1a_2.jpeg",
+        "productId" : 3224402,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1387_e1d19124-a5c1-4683-91ee-11ae0890001clogo.png",
+        "name" : "Olivia Garden Ceramic + Ion 45",
+        "shortDescription" : "Ceramic + Ion 45 er en hårbørste fra Olivia Garden som har et slankt og unikt sømløst design.",
+        "finalSalesPrice" : 174.4,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3216154",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/de493ca8-7dd4-4c7d-a2e9-02bf3c6d0d9f_20.jpeg",
+        "productId" : 3216154,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/58_b153022a-d0c8-4397-8696-05316ef0d19bRedken-2021-Logo-BK.jpg",
+        "name" : "Redken Extreme Cat Treatment 200ml",
+        "shortDescription" : "Redken Extreme Cat Treatment er en gjenoppbyggende behandling, som gir øyeblikkelig styrke til svekket og skadet hår, samtidig som at den styrker håret for å motvirke knekte hårstrå.",
+        "finalSalesPrice" : 215.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3140381",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/159d8473-4b69-4127-9740-0f01686e2478_2.jpeg",
+        "productId" : 3140381,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/310_3b8d1266-78f2-44fe-bbd3-53614f88565715_MAC_logo-big_black.png",
+        "name" : "MAC Cosmetics Studio Fix 24-Hour Smooth Wear Concealer Nw34 7ml",
+        "shortDescription" : "Studio Fix 24-Hour Smooth Wear Concealer er en lett og flytende concealer som gir deg en jevn dekning, glatter ujevnheter og føles behagelig på huden.",
+        "finalSalesPrice" : 247.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3258975",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/f2a27e93-439a-4325-a8d6-09f168cd1c12_3.jpeg",
+        "productId" : 3258975,
+        "manufacturerLogo" : "",
+        "name" : "Garnier Color Sensation Blackish Brown 3.0",
+        "shortDescription" : "Garnier har skapt hårfargeserien Color Sensation som gir et intenst og glansfullt resultat.",
+        "finalSalesPrice" : 76.0,
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3134568",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/a77c677f-2d28-4c29-aba4-02dbf4b60e8d_1.jpeg",
+        "productId" : 3134568,
+        "manufacturerLogo" : "",
+        "name" : "Proraso Toccasana Green Tea And Oatmeal Gift Set",
+        "shortDescription" : "Procaso Toccasana gavesett inneholder produkter fra Oats and Green Tea Collection for sensitiv hud. ",
+        "finalSalesPrice" : 319.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3214103",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/d6d0b481-5302-4a15-835c-02dd542b9973_3.jpeg",
+        "productId" : 3214103,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1587_f4f5509d-8cff-49cb-8577-1f87030b56edThe_Humble_Co_Logo_PNG_Transparent.jpg",
+        "name" : "The Humble Co Humble Natural Toothpaste Kids Strawberry 75ml",
+        "shortDescription" : "Humble Natural Toothpaste Kids Strawberry er en tannkrem for barn som er naturlig og miljøvennlig og kun består av nødvendige ingredienser, med smak av jordbær.",
+        "finalSalesPrice" : 49.6,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3194683",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/a4d704f4-e008-491d-abf0-0f16d22c7b88_3.jpeg",
+        "productId" : 3194683,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1462_64021c67-0758-4600-9463-1041c65de71eglitterecolovers.png",
+        "name" : "Glitter Eco Lovers Rainbow Glow Party Kit 24ml",
+        "shortDescription" : "Rainbow Party Kit er et praktisk sett som består av 3 glittermixer: Rainbow Glow i alle regnbuens farger, Pure Gold og Angel Dust. I tillegg er innholder den en flaske aloe vera til å feste glitteret på hud og i hår.",
+        "finalSalesPrice" : 231.2,
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3207398",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/4d88dd84-301e-4208-8a87-07f8c990d3db_1.jpeg",
+        "productId" : 3207398,
+        "manufacturerLogo" : "",
+        "name" : "Snö Of Sweden Camille Drop Ring Earring Silver/Clear 14,5mm",
+        "shortDescription" : "Vakre, nydelige øreringer som er perfekte til alle anledninger, både formelle og uformelle. ",
+        "finalSalesPrice" : 207.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3202126",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/a7cf0676-1ffe-45c0-b296-5d79ff011f96_1.jpeg",
+        "productId" : 3202126,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/874_30ed3af1-8a00-4109-9e13-a971c9f9701dPNG_HighRes-Nioxin_Logo_Branded.png rikitg.png",
+        "name" : "Bundle Deal Nioxin",
+        "shortDescription" : "Denne pakken fra Nioxin inneholder hele 5 hårprodukter og er for deg med en naturlig hår som er blitt merkbart tynnere. Pakken består av Nioxin System 2 Loyalty Kit, Nioxin Diaboost 100ml og Nioxin Instant Fullness 180ml. ",
+        "finalSalesPrice" : 844.0,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3224519",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/851555a7-47f7-4706-963b-5d896c685b4d_8.jpeg",
+        "productId" : 3224519,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/58_b153022a-d0c8-4397-8696-05316ef0d19bRedken-2021-Logo-BK.jpg",
+        "name" : "Redken Volume Injection Duo 300ml",
+        "shortDescription" : "I denne pakken fra Redken inngår to hårprodukter. Pakken består av Volume Injection Shampoo 300ml og Volume Injection Conditioner 300ml.",
+        "finalSalesPrice" : 396.0,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3254721",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/113377c5-c489-4fa5-9f1a-35900a18eb89_1.jpeg",
+        "productId" : 3254721,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1552_3e81939f-bc0a-45b2-bfdb-bbfcb340398dCOSRX_LOGO_Final.png riktig.png",
+        "name" : "COSRX The Niacinamide 15 Serum 20ml",
+        "shortDescription" : "Niacinamide 15 er et konsentrert serum som kombinerer maksimal konsentrasjon av superingrediensen niacinamide og optimale ingredienser for jevnere hud og total behandling av urenheter. #Clear skin! ",
+        "finalSalesPrice" : 179.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3255185",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/6696e12f-2301-4f6d-a7b4-3591102439e7_7.jpeg",
+        "productId" : 3255185,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1520_f6f2ce7a-74dd-427b-a584-e7f6dafbafbb50px_leminimacaron.png",
+        "name" : "Le Mini Macaron Single Gel Polish Cotton 8,5ml",
+        "finalSalesPrice" : 151.2,
+        "shortDescription" : "3-i-1 gel-lakken har en formel som kombinerer base coat, farge og top coat i ett strøk. Du får den samme høye kvaliteten og glansen som en profesjonell salong. Lakken varer opptil 10 dager.",
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3130837",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/d7778585-e5ac-4043-8fdf-817fbdf18fa2_3.jpeg",
+        "productId" : 3130837,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/325_33a51e33-b2a6-4a09-b23e-1f0e1003eb4cAGold, Logo, 50x.png",
+        "name" : "Australian Gold SPF30 Lip Balm Blister 4,2g",
+        "shortDescription" : "Australian Gold Lip Balm SPF 30 beskytter leppene mot UV-stråler. Den inneholder også vitaminer og næringsstoffer, som bidrar til å forhindre at leppene blir tørre, og isteden gjør de fuktig og myke. Samt Aloe vera, Solsikkefrøolje, Jojoba frøolje. Linden blomsterekstrakt og Vitamin E.",
+        "finalSalesPrice" : 76.0,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3202617",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/1edc185a-f4b9-46dc-aafa-535346f10970_4.jpeg",
+        "productId" : 3202617,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/67_48dc6cc3-ac65-491b-ad62-9165fd66e3e6363x50_EA.png",
+        "name" : "Elizabeth Arden Visible Difference Refining Moisture Cream 75ml",
+        "shortDescription" : "Visible Difference Refining Moisture Cream Complex av Elizabeth Arden er en krem som tilfører mye fuktighet og næring i huden. Kremen har en mykgjørende effekt som gir næring til huden og beskytter den mot å tørke ut. ",
+        "finalSalesPrice" : 121.6,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3258506",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/14b79e63-5cc6-47d4-a87e-35a7d578f9b2_1.jpeg",
+        "productId" : 3258506,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/307_49df4e04-8e3a-4ad3-80ef-c9a8ce8b584emay.png",
+        "name" : "Maybelline Lifter Gloss Candy Drop 24 Bubble Gum 5,4ml",
+        "shortDescription" : "Lifter Gloss er en fuktighetsgivende gloss som får leppene til å se fyldige og løftet ut.",
+        "finalSalesPrice" : 103.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3099996",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/4ae11c38-1fb9-43cd-bd7a-35abe3310709_29.jpeg",
+        "productId" : 3099996,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/307_49df4e04-8e3a-4ad3-80ef-c9a8ce8b584emay.png",
+        "name" : "Maybelline Instant Eraser Concealer 1 Light 6,8ml",
+        "finalSalesPrice" : 74.4,
+        "shortDescription" : "Maybelline New York Instant Anti Age Eraser Concealer er en concealer for moden hud med en smidig liten applikator som lar deg gjøre akkurat det. Den konsentrerte flytende formelen er behagelig fuktighetsgivende og gir et naturlig resultat uten å bli kakete på huden.",
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3208989",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/16ccbd1e-7cdd-4731-9a05-46deff099011_8.jpeg",
+        "productId" : 3208989,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/132_dac7dd3c-e34a-4f4f-be46-7a9f07e24a73bM_Logo_POG (002).jpg",
+        "name" : "bareMinerals Original Liquid Mineral Concealer Light/Medium 2.5W Warm 6ml",
+        "shortDescription" : "Original Liquid Mineral Concealer er en ren, vegansk concealer med byggbar dekkevne og en naturlig finish som forbedrer hudstrukturen og lysner mørke ringer for å gi en sunnere hud umiddelbart og over tid.",
+        "finalSalesPrice" : 292.0,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3233452",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/914ba9fd-c8c5-4312-b31b-729641da3a68_3.jpeg",
+        "productId" : 3233452,
+        "manufacturerLogo" : "",
+        "name" : "Garnier Fructis Hair Food Cocoa Butter Conditioner 350ml",
+        "shortDescription" : "Garnier Fructis Hair Food Cocoa Butter Conditioner er en nærende balsam til tørt, krøllete hår.",
+        "finalSalesPrice" : 61.6,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3232068",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/118924cb-b6fa-4222-8c65-89768ed7b83e_3.jpeg",
+        "productId" : 3232068,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/861_74cf784c-b291-4434-9010-aec1796f5d8dwb logo.png",
+        "name" : "Wetbrush Speed Dry Sky",
+        "shortDescription" : "Speed Dry er en børste med ventildesign som gjør at tørketiden blir kortere, samt heatflex™-bust som er varmebestandig, og skånsomt fjerner floker ved føning. Passer til alle hårtyper.",
+        "finalSalesPrice" : 143.2,
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3102126",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/cdf83fb8-b0d2-4d0b-bda9-2b07e17b8bce_1.jpg",
+        "productId" : 3102126,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/81_754a8805-12ad-4ae3-a826-abdaa67952a7LOGO_LANCOME_2021_Noir_50px.jpg",
+        "name" : "Lancôme Crayon Khôl Eyeliner Pencil #01 Noir 1,8g",
+        "shortDescription" : "Lancôme Crayon Khôl Eyeliner Pencil er en myk kholblyant som både kan brukes til å skape en skarp liner eller et mykere look når den tones ut.",
+        "finalSalesPrice" : 195.2,
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3096014",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/68139c52-c227-4bae-a522-2b13348f902f_4.jpeg",
+        "productId" : 3096014,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/285_cc3b0bc8-f9bc-4c9d-9269-d68fd9afc47aMO_LOGO-color.png",
+        "name" : "Moroccanoil Volumizing Mousse 250ml",
+        "shortDescription" : "Volumizing Mousse er et nydelig skum som gir rikelig med volum, spesielt utviklet for et middels til fint hår. ",
+        "finalSalesPrice" : 228.0,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3281554",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/9325ba25-b95f-4cf1-869c-72aaaaa0dd72_1.jpeg",
+        "productId" : 3281554,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/310_3b8d1266-78f2-44fe-bbd3-53614f88565715_MAC_logo-big_black.png",
+        "name" : "Mac Cosmetics Studio Radiance Serum-Powered Foundation NW30 30ml",
+        "shortDescription" : "Studio Radiance Serum-Powered™ Foundation er en fuktighetsgivende foundation som gir huden en myk strålende glød og styrker huden.",
+        "finalSalesPrice" : 391.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3140866",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/4132bb3a-f9e1-4a94-87ff-a77f9793dd1a_2.jpeg",
+        "productId" : 3140866,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/310_3b8d1266-78f2-44fe-bbd3-53614f88565715_MAC_logo-big_black.png",
+        "name" : "MAC Lipglass Candy Box 3,1ml",
+        "shortDescription" : "Lipglass er en elegant og holdbar lippgloss som finnes i flere ulike farger. Den gir et glansfullt resultat og inneholder jojobaoljer som mykgjør og pleier leppene.",
+        "finalSalesPrice" : 191.2,
+        "averageRatingFormatted" : "4"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3065900",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/40f5186c-e921-4ee9-a74d-a21b553f4e15_2.jpeg",
+        "productId" : 3065900,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/67_48dc6cc3-ac65-491b-ad62-9165fd66e3e6363x50_EA.png",
+        "name" : "Elizabeth Arden Eight Hour All-Over Miracle Oil 100ml",
+        "shortDescription" : "Eight Hour® Cream All-Over Miracle Oil viderefører de praktiske multifunksjonelle egenskapene til den originale Eight Hour® Cream.",
+        "finalSalesPrice" : 227.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3130387",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/dce42abc-7212-469a-9ab4-2b21b1500c56_1.jpeg",
+        "productId" : 3130387,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/67_48dc6cc3-ac65-491b-ad62-9165fd66e3e6363x50_EA.png",
+        "name" : "Elizabeth Arden Ceramide Advanced Capsules Daily Youth Restoring Eye Serum 60pcs",
+        "shortDescription" : "Ceramide Advanced Capsules Daily Youth Restoring Eye Serum er et øyeserum i kapselform. Formelen inneholder flere essensielle oljer som bidrar til å støtte hudens naturlige fornyelsesprosess og målrettet forebygger aldringstegn rundt øynene for et yngre utseende.",
+        "finalSalesPrice" : 501.6,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3097878",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/1e23c5d9-b2dc-47c9-ba89-2b2d43e139fa_1.jpeg",
+        "productId" : 3097878,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1326_2.png",
+        "name" : "Artdeco Eyeshadow #05 Pearly Grey Brown 0,8g",
+        "shortDescription" : "Øyenskygge i høy kavlitet fra Artdeco - Profesjonell, silkemyk tekstur med ett hav av farger å velge mellom. Skyggene sitter lenge på huden og har skimrende perlemornyanser. Passer inn i Artdeco sin Beauty box med magnet.",
+        "finalSalesPrice" : 53.6,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3100790",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/be2a46a0-0add-4387-b7e5-89b871bd8d5a_20.jpeg",
+        "productId" : 3100790,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/84_54ca61f4-72b2-4b3c-9c8f-366b144def28RL_logo_195x15px.jpg",
+        "name" : "Ralph Lauren Polo Blue Eau De Toilette 75ml",
+        "shortDescription" : "Blue Eau de Toilette er en blanding av saftig, vannaktig melon gir et forfriskende preg, med innslag av myke, aromatiske noter av salvie og verbena. Signaturakkorden av semsket skinn kombinert med særpreget og treaktig patsjuli skaper denne populære duften av vann.",
+        "finalSalesPrice" : 480.8,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3120666",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/f660c01a-dbe7-4338-b210-a7a26aa2aa00_1.jpg",
+        "productId" : 3120666,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/1426_0e9c312f-8e11-4266-8e22-2e0cf7a8e771IsaDora_logo_tagline_2023_black50px.png",
+        "name" : "IsaDora Big Bold Waterproof Volume Mascara 12 Black 16ml",
+        "shortDescription" : "Big Bold Waterproof har en vannfast formula som gir en kremet tekstur og som er lett å jobbe med og legge i flere lag. Kombinasjonen mellom børsten og den vannfaste formulaen sikrer deg fantastisk volum, separasjon og definisjon. Mascaraen har alle egenskapene til den klassiske Big Bold Mascara, og nå med ekstra bonus som vannfast alternativ. ",
+        "finalSalesPrice" : 95.2,
+        "averageRatingFormatted" : "4"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3257521",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/a1617d9d-01cc-46d8-a239-a7a450869fea_1.jpeg",
+        "productId" : 3257521,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/91_1.png",
+        "name" : "Even Better Refresh Hydrating and Repairing Makeup  CN 122 Clove 30ml",
+        "shortDescription" : "Fullt dekkende foundation med 24-timers holdbarhet gjenopbygger huden for et mer ungdommeligt utseende.",
+        "finalSalesPrice" : 327.2,
+        "averageRatingFormatted" : "4"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3251279",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/992cde6a-1899-4578-9c38-53781cc52871_2.jpeg",
+        "productId" : 3251279,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/91_1.png",
+        "name" : "Clinique Smart Clinical Repair Wrinkle Cream Rich Cream 50ml",
+        "shortDescription" : "Smart Clinical Repair Wrinkle Cream Rich fra Clinique er en krem som bekjemper rynker, styrker og tilfører huden næring, for glattere, mer ungdommelig hud.",
+        "finalSalesPrice" : 472.8,
+        "averageRatingFormatted" : "4"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3140605",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/e95414af-f8aa-4417-a3e3-a7f7b01b3acb_5.jpeg",
+        "productId" : 3140605,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/310_3b8d1266-78f2-44fe-bbd3-53614f88565715_MAC_logo-big_black.png",
+        "name" : "MAC Cosmetics Studio Fix Fluid Foundation SPF15 Nc30 30ml",
+        "shortDescription" : "Studio Fix Fluid Foundation er en medium til fult dekkende, flytende foundation, som gir en matt look og dekker urenheter, pigmentflekker, porer og røde partier. Foundationen er myk og lett å påføre, samtidig som den er svært holdbar. ",
+        "finalSalesPrice" : 351.2,
+        "averageRatingFormatted" : "4-5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3246010",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/758433cf-c3b5-47a8-9969-72feccd71b6c_1.jpeg",
+        "productId" : 3246010,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/86_2.png",
+        "name" : "Yves Saint Laurent L'Homme Eau De Parfum 100ml",
+        "finalSalesPrice" : 1100.8,
+        "shortDescription" : "L'Homme Eau De Parfum fra Yves Saint Laurent er laget for den kule og avslappede mannen, som er tro mot seg selv. Med de varme bourbon-notene i samspill med bitter appelsin gjenfinner L'Hommes ikoniske trenotesignatur seg i en enda kraftigere og mer intens utgave: L’Homme Eau de Parfum.",
+        "averageRatingFormatted" : "5"
+      }
+    },
+    {
+      "_index" : "blivakker.638460281519176859_productcacheable",
+      "_type" : "_doc",
+      "_id" : "3107310",
+      "_score" : 1.0,
+      "_source" : {
+        "imageLargeUrl" : "https://cdn.blivakker.no/Media/Product/Image/300/92b78acc-1e04-4650-a89e-5388295012e1_1.jpg",
+        "productId" : 3107310,
+        "manufacturerLogo" : "https://cdn.blivakker.no/Media/ManufacturerLogo/81_754a8805-12ad-4ae3-a826-abdaa67952a7LOGO_LANCOME_2021_Noir_50px.jpg",
+        "name" : "Lancôme Bi-Facil Waterproof Eye Makeup Remover Sensitive Eyes 200ml",
+        "shortDescription" : "En øyemakeupfjerner som fjerner alle former for øyemakeup. Formelen er utviklet så den passer til selv sensitive øyne og kontaktlinsebrukere. Den fjerner enkelt øyemakeup inkludert vannfast mascara uten å etterlate huden med en fettete følelse. Passer til alle hudtyper.",
+        "finalSalesPrice" : 208.0,
+        "averageRatingFormatted" : "5"
+      }
+    }
+  ]
