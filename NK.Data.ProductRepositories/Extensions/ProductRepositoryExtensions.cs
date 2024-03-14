@@ -37,7 +37,6 @@ namespace NK.Data.Repositories.Extensions
         }
     }
 
-
     public class MockProduct
     {
         [JsonProperty("_source")]

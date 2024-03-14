@@ -1,6 +1,8 @@
 ﻿using System.Globalization;
 using System.Reflection;
 using log4net;
+using NK.Data.Repositories.Extensions;
+using NK.DataRepositories;
 
 public class Startup
 {
@@ -12,6 +14,15 @@ public class Startup
         var cultureInfo = new CultureInfo("no-NO");
         CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
         CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+    }
+
+    public static void PopulateProductMockData()
+    {
+        using (ProductRepository repo = new ProductRepository())
+        {
+            repo.Products.FillProductRepositoryMock();
+            repo.Commit();
+        }
     }
    
 }

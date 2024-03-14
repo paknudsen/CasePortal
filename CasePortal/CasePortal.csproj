@@ -11,6 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="..\products.json" Link="products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.16" />
     <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="5.4.2">
       <PrivateAssets>all</PrivateAssets>
@@ -21,10 +27,18 @@
   <ItemGroup>
     <ProjectReference Include="..\NK.BusinessProcess.Core\NK.BusinessProcess.Core.csproj" />
     <ProjectReference Include="..\NK.BusinessProcess.Web\NK.BusinessProcess.Web.csproj" />
+    <ProjectReference Include="..\NK.Data.ProductRepositories\NK.Data.Repositories.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Config\" />
     <Folder Include="Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\ContextConfigurationSection.config" Link="Config\ContextConfigurationSection.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 	<PropertyGroup>
