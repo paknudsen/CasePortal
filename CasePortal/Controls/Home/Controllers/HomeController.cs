@@ -1,4 +1,4 @@
-﻿using CasePortal.Models;
+﻿using CasePortal.Controls.Base.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
