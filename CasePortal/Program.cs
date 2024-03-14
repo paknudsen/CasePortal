@@ -66,5 +66,5 @@ app.UseMvc();
 // Attribute routing (defined in each controller/action)
 app.UseMvc();
 Startup.SetDefaultApplicationCulture();
-Startup.PopulateProductMockData()
+Startup.PopulateProductMockData();
 app.Run();
