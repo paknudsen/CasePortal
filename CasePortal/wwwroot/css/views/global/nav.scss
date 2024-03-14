@@ -1,0 +1,66 @@
+﻿@import '../../variables/_colors.scss';
+
+/** Tabs start */
+.navigationtabs-wrapper {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+
+    .navigationtabs-item-wrapper {
+
+        .navigationtabs-button {
+            background-color: $color-form-text-black;
+            color: $color-white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px 5px 0 0;
+            padding: 6px 38px;
+            white-space: nowrap;
+
+            &.active {
+                background-color: $color-white;
+                color: $color-blue;
+                box-shadow: 0 -6px 6px -1px rgba(0, 0, 0, .1);
+                padding: 7px 38px;
+            }
+        }
+    }
+}
+
+.navigationtabs-contentwrapper {
+    background-color: $color-white;
+    padding: 38px;
+    padding-top: 0;
+    min-height: calc(100vh - 9.4em);
+
+    & > * {
+        width: calc(100% - 5px);
+    }
+}
+/** Tabs end */
+
+/** Minitabs start */
+.navigationtabs-wrapper.mini-navigationtabs-wrapper {
+    background-color: $color-white;
+    border-radius: 5px 5px 0 0;
+    border: 20px solid $color-light-grey;
+    border-bottom: unset;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.navigationtabs-contentwrapper.mini-navigationtabs-contentwrapper {
+    background-color: $color-white;
+    border-radius: 0 0 5px 5px;
+    border: 20px solid $color-light-grey;
+    border-top: unset;
+    padding: 20px;
+    padding-top: 10px;
+    overflow: auto;
+    min-height: unset;
+}
+/** Minitabs end */

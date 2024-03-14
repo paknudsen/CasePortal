@@ -1,0 +1,586 @@
+﻿@import '../../variables/_colors.scss';
+@import '../../variables/_mixins.scss';
+
+/// Add class to table wrapper of .table tables
+/// Add class to table element of .speed-table tables
+// Enables scrolling "inside" table
+.scroll-table-wrapper {
+    max-height: 80vh; // Avoid double vertical scrollbars + keep hor. scrollbar visible
+    overflow: auto;
+}
+
+.table {
+    background-color: $color-table-body;
+    width: calc(100% - 1px); // makes space for the footer border to prevent h-scroll
+
+    @include hide-col-x;
+    // Reset bootstrap default
+    > thead > tr > th, > tbody > tr > td {
+        border: 0; // Remove bootstrap border
+        padding: 3px 6px;
+        font-weight: 600;
+        overflow-wrap: break-word;
+        vertical-align: middle;
+
+        &:first-of-type {
+            padding-left: 7px;
+        }
+
+        &:last-of-type {
+            padding-right: 7px;
+        }
+
+        &[data-sort-type] {
+            cursor: pointer;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+        // For event delegations to target the td and not elements inside
+        &.clickable > * {
+            pointer-events: none;
+        }
+    }
+
+    > tbody > tr {
+        min-height: 49px;
+        border-bottom: 3px solid white;
+
+        &[data-custom-input-type] {
+            border-bottom: 3px solid white;
+
+        }
+
+        & > td {
+            &:not(:last-of-type) {
+                border-right: .3rem solid $color-white;
+            }
+        }
+
+        &:first-of-type {
+            border-top: 3px solid white;
+        }
+
+        a {
+            color: $color-table-header;
+            text-decoration: none !important;
+            font-weight: bold;
+
+            &:hover {
+                color: $color-blue;
+            }
+        }
+
+        a.large-clickable-area {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            padding-right: 2em;
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+            margin-right: -2em;
+            margin-top: -1.5em;
+            margin-bottom: -1.5em;
+        }
+
+        input:disabled, select:disabled, textarea:disabled {
+            background-color: transparent;
+            border: none;
+        }
+    }
+
+    > tbody {
+        border: 0 !important; // Overriding bootstrap border
+    }
+
+    > thead.thead-dark > tr:nth-of-type(1) {
+        background-color: $color-table-header;
+
+        > th {
+            background-color: $color-table-header;
+            height: 2.5rem;
+            color: $color-white;
+            font-weight: bold;
+            vertical-align: middle;
+
+            &[data-sort-type]::after {
+                cursor: pointer;
+                font-family: var(--fa-font-family-pro);
+                content: "\f0dc";
+                padding-left: 10px;
+            }
+
+            &[data-sort-type].sorted-asc::after {
+                cursor: pointer;
+                font-family: var(--fa-font-family-pro);
+                content: "\f0de";
+            }
+
+            &[data-sort-type].sorted-desc::after {
+                cursor: pointer;
+                font-family: var(--fa-font-family-pro);
+                content: "\f0dd";
+            }
+        }
+    }
+
+    > thead.thead-dark > tr:nth-of-type(2) {
+        background-color: white;
+
+        > th {
+            background-color: white;
+            min-height: 4.5rem;
+            font-weight: bold;
+            border-bottom: none;
+            color: $color-form-text-black;
+        }
+    }
+
+    > tfoot.tfoot-dark > tr:nth-of-type(1) {
+        background-color: $color-table-footer;
+
+        > td {
+            background-color: $color-table-footer;
+            height: 2.5rem;
+            max-height: 2.5rem;
+            color: $color-white;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+    }
+
+    > thead.thead-white {
+        background-color: white;
+    }
+
+    > tfoot {
+        border: 1px solid $color-off-grey;
+        font-weight: bold;
+    }
+    
+}
+
+
+.table-action {
+    > tbody > tr {
+        &.editmode {
+            input:read-only, textarea:read-only, select:read-only {
+                background-color: transparent;
+                border: none;
+            }
+
+            .visible-in-viewmode {
+                display: none !important;
+            }
+
+            .visible-in-editmode {
+                // It should be possible to specify what fields should be hidden on load in the markup. To override this value, display-inline must be !important
+                display: inline !important;
+            }
+
+            // If there is a nested table, don't show its edit mode controls
+            table .visible-in-editmode {
+                display: none !important;
+            }
+
+            .multiselectresult:hover {
+                i, input {
+                    color: #d9534f !important; // Need to override what is present on the icon
+                    cursor: pointer;
+                }
+            }
+
+            .multiselectresult {
+                max-width: 36rem;
+
+                input {
+                    height: initial;
+                }
+            }
+
+            .multiselectresult > * {
+                pointer-events: none;
+            }
+
+            .table-action-edit {
+                display: none;
+            }
+            
+            .editmode { 
+                .visible-in-editmode {
+                    display: inline !important;
+                }
+            }
+        }
+        
+        &:not(.editmode) {
+            
+            .visible-in-viewmode {
+                display: inline !important;
+            }
+
+            .visible-in-editmode {
+                // It should be possible to specify what fields should be hidden on load in the markup. To override this value, display-inline must be !important
+                display: none !important;
+            }
+            // If we are in a nested table whose row is in edit mode, then override the above rule to make its children visible 
+            .editmode {
+                .visible-in-editmode {
+                    display: inline !important;
+                }
+            }
+            
+            .table-action-save {
+                display: none;
+            }
+
+            .table-action-cancel {
+                display: none;
+            }
+        }
+    }
+}
+
+table.sticky > thead, table.sticky > thead > tr:nth-of-type(1) > th {
+    // Sticky Table Header
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    white-space: nowrap;
+}
+
+.table.table-clickable > tbody > tr:hover {
+    background: $color-blue 0% 0% no-repeat padding-box !important; // Overriding bootstrap
+    color: #fff;
+    box-shadow: 0px 0px 3px;
+    border-radius: 2px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.table.hide-inactive-rows > tbody > tr[data-active="false"] {
+    display: none;
+}
+
+.table.fixed-layout {
+    table-layout: fixed;
+}
+
+table.sticky-last-column {
+    > tbody > tr > td:last-of-type:not(.error-message) {
+        background-color: $color-table-body;
+    }
+
+    > thead > tr > th:last-of-type, > tbody > tr > td:last-of-type:not(.error-message) {
+        -webkit-box-shadow: inset 3px 0px 0px 0px white;
+        -moz-box-shadow: inset 3px 0px 0px 0px white;
+        box-shadow: inset 3px 0px 0px 0px white;
+        padding-left: 6px;
+        position: sticky;
+        right: 0;
+    }
+}
+
+table.sticky-first-column {
+    > tbody > tr > td:first-of-type:not(.error-message) {
+        background-color: $color-table-body;
+    }
+
+    > thead > tr > th:first-of-type, > tbody > tr > td:first-of-type:not(.error-message) {
+        position: sticky;
+        left: 0;
+        border-right: 3px solid white;
+    }
+}
+
+::-webkit-scrollbar {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    width: 9px;
+    height: 9px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: gainsboro;
+    border-radius: 25px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color-blue;
+    border-radius: 25px;
+    margin: 2px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #52c5fd;
+}
+
+.table-label {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: $color-table-header;
+    margin-bottom: 0;
+}
+/** IMPORTANT!!!
+    The speed-table class is only meant for gigantic tables. 
+    It uses special handling css to achieve performance, and is not a better option than the normal table styles.
+    The default grid-like table style is lost, and replaced with flexbox which required all columns to have their width set, to simulate grid style.
+*/
+table.speed-table {
+    will-change: contents;
+    display: flex;
+    flex-direction: column;
+    word-break: break-all;
+    // Common head and body styles
+    > thead, > tbody {
+        will-change: contents;
+        display: inline-flex; // Performance is gone without this
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-direction: column;
+        background-color: inherit;
+
+        > tr {
+            will-change: contents;
+            display: flex; // Ser ut som om denne legger på 1 sek lock on load
+            flex-wrap: nowrap;
+            align-items: stretch;
+            flex-grow: 1;
+
+            > th, > td {
+                display: flex;
+                align-items: center;
+                flex-basis: 0;
+                flex-grow: 1;
+                position: relative;
+
+                &:last-child {
+                    align-self: stretch;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    > thead.thead-dark > tr:nth-child(1) > th {
+        // Vertically center header text
+        display: flex;
+        align-items: center;
+    }
+
+    > thead.thead-dark > tr:nth-child(2) > th {
+        align-self: stretch;
+    }
+
+    > thead > tr > th:last-child {
+        flex-grow: 1;
+    }
+
+    > tbody {
+        content-visibility: auto;
+        /* 
+        * Numbers needs to be tweaked, this is where the performance lies. Get this right!!!!
+        * I calculated the height here to be 2x the scroll table height (80vh) depending on how many columns are visible
+        * I calculated the width so that it if the user scrolls all the way to the right, the width is still inside the viewport. 
+        * If it is outside, the view won't update when scrolling vertically
+        */
+        contain-intrinsic-size: 80vw 160vh;
+        min-width: min-content;
+    }
+    /** Default speed table column widths */
+    > thead > tr > th.extra-tight-col, > tbody > tr > td.extra-tight-col {
+        --extra-tight-column-width: 7.917rem;
+        min-width: var(--extra-tight-column-width);
+        max-width: var(--extra-tight-column-width);
+    }
+
+    > thead > tr > th.tight-col, > tbody > tr > td.tight-col {
+        --tight-column-width: 11.25rem;
+        min-width: var(--tight-column-width);
+        max-width: var(--tight-column-width);
+    }
+
+    > thead > tr > th, > tbody > tr > td {
+        --column-width: 16rem;
+        min-width: var(--column-width);
+        max-width: var(--column-width);
+    }
+
+    > thead > tr > th.wide-col, > tbody > tr > td.wide-col {
+        --wide-column-width: 24.167rem;
+        min-width: var(--wide-column-width);
+        max-width: var(--wide-column-width);
+    }
+
+    > thead > tr > th.extra-wide-col, > tbody > tr > td.extra-wide-col {
+        --extra-wide-column-width: 32.083rem;
+        min-width: var(--extra-wide-column-width);
+        max-width: var(--extra-wide-column-width);
+    }
+
+    > thead > tr > th.super-extra-wide-col, > tbody > tr > td.super-extra-wide-col {
+        --super-extra-wide-column-width: 50rem;
+        min-width: var(--super-extra-wide-column-width);
+        max-width: var(--super-extra-wide-column-width);
+    }
+}
+
+.speed-table.sticky-last-column {
+    > thead > tr > th:last-of-type, > tbody > tr > td:last-of-type:not(.error-message) {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.table, .speed-table, .grouped-table {
+    > thead > tr.general-validation-error, > tbody > tr.general-validation-error {
+        background-color: $color-light-red;
+        min-height: 30px !important;
+        max-height: 30px !important;
+
+        > td {
+            background-color: $color-light-red !important;
+
+            &.error-message {
+                color: $color-red;
+                min-width: fit-content !important;
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+            }
+
+            &:last-of-type {
+                margin-left: auto !important;
+            }
+        }
+    }
+}
+/** Places all items in wrapper on a single line */
+.speed-table > thead > tr:nth-of-type(2) > th {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 39px;
+
+    input:not(:first-of-type) {
+        margin-left: 3px;
+    }
+}
+
+
+div.share-horizontal-space {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    //min-height: 39px;
+
+    input:not(:first-of-type) {
+        margin-left: 3px;
+    }
+}
+/* A grouped table is a table with multiple tbodies where each tbody represents a group. i.e. a product with multiple product shops (massupdate) */
+table.grouped-table {
+    width: calc(100% - 1px); // makes space for the footer border to prevent h-scroll
+    background-color: $color-white;
+
+    @include hide-col-x;
+
+    a {
+        color: $color-table-header;
+        text-decoration: none !important;
+        font-weight: bold;
+
+        &:hover {
+            color: $color-blue;
+        }
+    }
+
+    > thead {
+        font-weight: bold;
+
+        &.thead-dark {
+            background-color: $color-table-header;
+            color: $color-white;
+        }
+    }
+
+    > thead > tr {
+        height: 3.5rem;
+
+        &:last-of-type {
+            background-color: $color-white;
+            color: $color-table-header;
+        }
+    }
+
+    > thead > tr > th {
+
+        [data-custom-input-type], input, select, textarea {
+            & + i {
+                color: $color-table-header;
+                padding: 1rem .7rem;
+            }
+        }
+
+        > div.share-horizontal-space {
+            > [data-custom-input-type], > input:not([type="checkbox"]), > select, > textarea, div.input-icon {
+                width: 100%;
+            }
+
+            > i {
+                color: $color-table-header;
+                padding: 1rem .7rem;
+            }
+        }
+    }
+
+    > tbody {
+        background-color: $color-table-body;
+        border-bottom: .3rem solid $color-white;
+
+        &.bottom-shadow {
+            border-bottom: 2px solid $color-pill-inactive;
+            box-shadow: 0 10px 20px $color-pill-inactive;
+            z-index: 1;
+            position: relative;
+        }
+    }
+
+
+    > tbody > tr > td {
+
+        &:not(:last-of-type) {
+            border-right: .3rem solid $color-white;
+        }
+
+        &:not(:first-of-type) {
+            border-left: .3rem solid $color-white;
+        }
+
+        > [data-custom-input-type], > input:not([type="checkbox"]), > select, > textarea, .input-icon {
+            width: 100%; 
+        }
+    }
+
+    > thead > tr > th, > tbody > tr > td {
+        padding: .2rem 2rem .2rem .2rem;
+        vertical-align: middle;
+
+        &:first-of-type {
+            padding-left: 1.5rem;
+        }
+
+        &:last-of-type {
+            padding-right: 1.5rem;
+        }
+    }
+}
+
+table > tbody > tr > td, table > thead > tr > th {
+    .savebtn {
+        width: 5.83rem;
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+}

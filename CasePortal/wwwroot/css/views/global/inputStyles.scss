@@ -1,0 +1,368 @@
+﻿@import '../../variables/_colors.scss';
+@import '../../variables/_svgicons.scss';
+
+//// HTML general input field styles
+//// ALL normal input fields should have this markup, unless the input is inside a table or the input is used as a part of a component
+//// <label data-label="Something" class="input-field">
+////     <input type="text" placeholder=" " />
+//// </label>
+label.input-field > input[type="text"],
+label.input-field > input[type="url"],
+label.input-field > input[type="email"],
+label.input-field > input[type="number"],
+label.input-field > input[type="search"],
+label.input-field > input[type="tel"] {
+    background-color: $color-white;
+    color: $color-form-text-black;
+    border: 1px solid $color-pill-inactive;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: .9rem;
+}
+
+label.input-field > input[type="search"]::-webkit-search-cancel-button {
+    cursor: pointer;
+    top: calc(50% - 0.5em);
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    right: 0;
+    margin-right: 0.75rem;
+    background: $svg-icon-times no-repeat 50% 50%;
+}
+
+label.input-field > input[type="number"]::-webkit-inner-spin-button {
+    cursor: pointer;
+    top: calc(50% - 0.75em);
+    height: 1.5em;
+    width: 1em;
+    position: absolute;
+    right: 0;
+    margin-right: 0.75rem;
+}
+
+label.input-field:not([data-label]) > input[type="text"],
+label.input-field:not([data-label]) > input[type="url"],
+label.input-field:not([data-label]) > input[type="email"],
+label.input-field:not([data-label]) > input[type="number"],
+label.input-field:not([data-label]) > input[type="search"],
+label.input-field:not([data-label]) > input[type="tel"] {
+    padding-top: 0;
+}
+
+label.input-field > input[type="text"][disabled],
+label.input-field > input[type="url"][disabled],
+label.input-field > input[type="email"][disabled],
+label.input-field > input[type="number"][disabled],
+label.input-field > input[type="search"][disabled],
+label.input-field > input[type="tel"][disabled],
+label.input-field > input[type="text"][readonly],
+label.input-field > input[type="url"][readonly],
+label.input-field > input[type="email"][readonly],
+label.input-field > input[type="number"][readonly],
+label.input-field > input[type="search"][readonly],
+label.input-field > input[type="tel"][readonly] {
+    border: 1px solid $color-pill-inactive;
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+    background-color: $color-form-background-inactive-grey;
+    pointer-events: none;
+}
+
+label.input-field > input[type="text"]:focus:not([readonly]),
+label.input-field > input[type="url"]:focus:not([readonly]),
+label.input-field > input[type="email"]:focus:not([readonly]),
+label.input-field > input[type="number"]:focus:not([readonly]),
+label.input-field > input[type="search"]:focus:not([readonly]),
+label.input-field > input[type="tel"]:focus:not([readonly]) {
+    outline: none;
+    border: 1px solid $color-blue;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px $color-blue;
+}
+
+label.input-field:has(input[type="text"]),
+label.input-field:has(input[type="url"]),
+label.input-field:has(input[type="email"]),
+label.input-field:has(input[type="number"]),
+label.input-field:has(input[type="search"]),
+label.input-field:has(input[type="tel"]) {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 3.25rem;
+    margin-bottom: 0;
+
+    i:first-of-type {
+        padding-left: 1rem;
+    }
+
+    > .info-icon, > .warning-icon, > .error-icon {
+        position: absolute;
+        padding: .3rem;
+        right: 0;
+    }
+}
+
+label.input-field:has(input[type="text"]),
+label.input-field:has(input[type="url"]),
+label.input-field:has(input[type="email"]),
+label.input-field:has(input[type="tel"]) {
+
+    i:last-of-type {
+        padding-right: 1rem;
+    }
+    // Info, warning and error icons are present at the same time
+    &:has(.info-icon):has(.warning-icon):has(.error-icon) {
+        input {
+            padding-right: 62.5px;
+        }
+
+        .info-icon {
+            right: 44.5px;
+        }
+
+        .warning-icon {
+            right: 25px;
+        }
+
+        .error-icon {
+            right: 0;
+        }
+    }
+    // Both info and warning icons are present at the same time
+    &:has(.info-icon):has(.warning-icon) {
+        input {
+            padding-right: 42.5px;
+        }
+
+        .info-icon {
+            right: 25px;
+        }
+
+        .warning-icon {
+            right: 0;
+        }
+    }
+    // Both info and error icons are present at the same time
+    &:has(.info-icon):has(.error-icon) {
+        input {
+            padding-right: 42.5px;
+        }
+
+        .info-icon {
+            right: 25px;
+        }
+
+        .error-icon {
+            right: 0;
+        }
+    }
+    // Both warning and error icons are present at the same time
+    &:has(.warning-icon):has(.error-icon) {
+        input {
+            padding-right: 42.5px;
+        }
+
+        .warning-icon {
+            right: 25px;
+        }
+
+        .error-icon {
+            right: 0;
+        }
+    }
+
+    &:has(.warning-icon), &:has(.error-icon), &:has(.info-icon) {
+        input {
+            padding-right: 25px;
+        }
+    }
+}
+
+label.input-field.input-icon:has(input[type="text"]),
+label.input-field.input-icon:has(input[type="url"]),
+label.input-field:has(input[type="number"]),
+label.input-field:has(input[type="search"]) {
+    .info-icon, .warning-icon, .error-icon {
+        right: 20px;
+    }
+
+    input {
+        padding-right: 24px;
+    }
+    // Info, warning and error icons are present at the same time
+    &:has(.info-icon):has(.warning-icon):has(.error-icon) {
+        input {
+            padding-right: 78px;
+        }
+
+        .info-icon {
+            right: 57.5px;
+        }
+
+        .warning-icon {
+            right: 38px;
+        }
+
+        .error-icon {
+            right: 20px;
+        }
+    }
+    // Both info and warning icons are present at the same time
+    &:has(.info-icon):has(.warning-icon) {
+        input {
+            padding-right: 60px;
+        }
+
+        .info-icon {
+            right: 38px;
+        }
+
+        .warning-icon {
+            right: 20px;
+        }
+    }
+    // Both info and error icons are present at the same time
+    &:has(.info-icon):has(.error-icon) {
+        input {
+            padding-right: 60px;
+        }
+
+        .info-icon {
+            right: 38px;
+        }
+
+        .error-icon {
+            right: 20px;
+        }
+    }
+    // Both warning and error icons are present at the same time
+    &:has(.warning-icon):has(.error-icon) {
+        input {
+            padding-right: 60px;
+        }
+
+        .warning-icon {
+            right: 38px;
+        }
+
+        .error-icon {
+            right: 20px;
+        }
+    }
+
+    &:has(.warning-icon), &:has(.error-icon), &:has(.info-icon) {
+        input {
+            padding-right: 45px;
+        }
+    }
+}
+
+
+label.input-field:has(input[type="text"])::before,
+label.input-field:has(input[type="url"])::before,
+label.input-field:has(input[type="email"])::before,
+label.input-field:has(input[type="number"])::before,
+label.input-field:has(input[type="search"])::before,
+label.input-field:has(input[type="tel"])::before {
+    content: attr(data-label);
+    position: absolute;
+    font-size: 1em;
+    line-height: 0;
+    margin-left: 1rem;
+    color: $color-placeholder-grey;
+    opacity: .7;
+    top: 1.625rem;
+    transition: all .2s ease;
+    pointer-events: none;
+}
+
+label.input-field:has(input[type="text"]:not(:placeholder-shown))::before,
+label.input-field:has(input[type="url"]:not(:placeholder-shown))::before,
+label.input-field:has(input[type="email"]:not(:placeholder-shown))::before,
+label.input-field:has(input[type="number"]:not(:placeholder-shown))::before,
+label.input-field:has(input[type="search"]:not(:placeholder-shown))::before,
+label.input-field:has(input[type="tel"]:not(:placeholder-shown))::before,
+label.input-field:has(input[type="text"]:focus)::before,
+label.input-field:has(input[type="url"]:focus)::before,
+label.input-field:has(input[type="email"]:focus)::before,
+label.input-field:has(input[type="number"]:focus)::before,
+label.input-field:has(input[type="search"]:focus)::before,
+label.input-field:has(input[type="tel"]:focus)::before {
+    font-size: .8em;
+    line-height: unset;
+    opacity: unset;
+    margin-left: 1rem;
+    font-weight: 900;
+    color: $color-gray-900;
+    top: .3rem;
+    transition: all .2s ease;
+}
+//// Input sizes, small - medium - large or unset(100%)
+label.input-field:has(input[type="text"]).small,
+label.input-field:has(input[type="url"]).small,
+label.input-field:has(input[type="email"]).small,
+label.input-field:has(input[type="number"]).small,
+label.input-field:has(input[type="search"]).small,
+label.input-field:has(input[type="tel"]).small {
+    width: 10rem;
+}
+
+label.input-field:has(input[type="text"]).medium,
+label.input-field:has(input[type="url"]).medium,
+label.input-field:has(input[type="email"]).medium,
+label.input-field:has(input[type="number"]).medium,
+label.input-field:has(input[type="search"]).medium,
+label.input-field:has(input[type="tel"]).medium {
+    width: 20rem;
+}
+
+
+label.input-field:has(input[type="text"]).large,
+label.input-field:has(input[type="url"]).large,
+label.input-field:has(input[type="email"]).large,
+label.input-field:has(input[type="number"]).large,
+label.input-field:has(input[type="search"]).large,
+label.input-field:has(input[type="tel"]).large {
+    width: 40rem;
+}
+//Large search input, an extra high and wide input field used for search fields.
+//Normally used when search is a key part of the page, ex: Product search. https://test.brandsdalgroup.com:7151/2/Products/management/simplesearch
+label.input-field:has(input[type="text"]).large-search-input {
+    height: 6.3rem;
+    width: 52.6rem;
+    font-size: 1.5rem;
+
+
+    > input[type="text"] {
+        border-radius: 5rem !important;
+        font-weight: 700;
+        padding-left: 3rem;
+        padding-right: 60px;
+    }
+
+    &:has(.error-icon) {
+        .error-icon {
+            right: 26px;
+        }
+    }
+}
+
+
+label.input-field:has(input[type="text"]).large-search-input::before {
+    margin-left: 3.15rem;
+    top: 3.15rem;
+}
+
+
+label.input-field:has(input[type=text]:not(:placeholder-shown)).large-search-input::before,
+label.input-field:has(input[type="text"]:focus).large-search-input::before {
+    margin-left: 3.15rem;
+    top: .3rem;
+}

@@ -1,0 +1,190 @@
+﻿@import '../../variables/_colors.scss';
+
+//// HTML general textarea field styles
+//// ALL normal textarea fields should have this markup, unless the input is inside a table or the input is used as a part of a component
+//// <label data-label="Something" class="input-field">
+////     <textarea type="text" placeholder=" " />
+//// </label>
+label.input-field > textarea {
+    background-color: $color-white;
+    color: $color-form-text-black;
+    border: 1px solid $color-pill-inactive;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 1.4rem;
+    resize: none;
+}
+
+label.input-field:not([data-label]) > textarea {
+    padding-top: 0;
+}
+
+label.input-field > textarea[disabled],
+label.input-field > textarea[readonly] {
+    border: 1px solid $color-pill-inactive;
+    border-radius: 5px;
+    background-color: $color-form-background-inactive-grey;
+    pointer-events: none;
+}
+
+
+label.input-field > textarea:focus {
+    outline: none;
+    border: 1px solid $color-blue;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px $color-blue;
+}
+
+label.input-field:has(textarea) {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+
+    i:first-of-type {
+        padding-left: 1rem;
+    }
+
+    i:last-of-type {
+        padding-right: 1rem;
+    }
+
+    > .info-icon, > .warning-icon, > .error-icon {
+        position: absolute;
+        padding: .3rem;
+        right: 0;
+    }
+    // Info, warning and error icons are present at the same time
+    &:has(.info-icon):has(.warning-icon):has(.error-icon) {
+        textarea {
+            padding-right: 57.5px;
+        }
+
+        .info-icon {
+            right: 44.5px;
+        }
+
+        .warning-icon {
+            right: 25px;
+        }
+
+        .error-icon {
+            right: 0;
+        }
+    }
+    // Both info and warning icons are present at the same time
+    &:has(.info-icon):has(.warning-icon) {
+        textarea {
+            padding-right: 44.5px;
+        }
+
+        .info-icon {
+            right: 25px;
+        }
+
+        .warning-icon {
+            right: 0;
+        }
+    }
+    // Both info and error icons are present at the same time
+    &:has(.info-icon):has(.error-icon) {
+        textarea {
+            padding-right: 44.5px;
+        }
+
+        .info-icon {
+            right: 25px;
+        }
+
+        .error-icon {
+            right: 0;
+        }
+    }
+    // Both warning and error icons are present at the same time
+    &:has(.warning-icon):has(.error-icon) {
+        textarea {
+            padding-right: 44.5px;
+        }
+
+        .warning-icon {
+            right: 25px;
+        }
+
+        .error-icon {
+            right: 0;
+        }
+    }
+
+    &:has(.warning-icon), &:has(.error-icon), &:has(.info-icon) {
+        textarea {
+            padding-right: 28px;
+        }
+    }
+}
+
+label.input-field:has(textarea)::before {
+    content: attr(data-label);
+    position: absolute;
+    font-size: 1em;
+    line-height: 0;
+    margin-left: 1rem;
+    color: $color-placeholder-grey;
+    opacity: .7;
+    top: 1.625rem;
+    transition: all .2s ease;
+    pointer-events: none;
+}
+
+label.input-field:has(textarea:not(:placeholder-shown))::before,
+label.input-field:has(textarea:focus)::before {
+    font-size: .8em;
+    line-height: unset;
+    opacity: unset;
+    margin-left: 1px;
+    margin-top: 1px;
+    font-weight: 900;
+    color: $color-gray-900;
+    top: 0;
+    transition: all .2s ease;
+    background-color: white;
+    border-top-left-radius: 1rem;
+    width: auto;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+    pointer-events: none;
+}
+
+label.input-field:has(textarea[disabled]:not(:placeholder-shown))::before,
+label.input-field:has(textarea[readonly]:focus)::before {
+    background-color: $color-form-background-inactive-grey;
+}
+
+//// Input sizes, small - medium - large or unset(100%)
+label.input-field:has(textarea).small {
+    width: 10rem;
+}
+
+label.input-field:has(textarea).medium {
+    width: 20rem;
+}
+
+label.input-field:has(textarea).large {
+    width: 40rem;
+}
+
+//// text area heights, small - medium - large or unset(100%)
+label.input-field:has(textarea).small-y {
+    height: 6.66rem;
+}
+
+label.input-field:has(textarea).medium-y {
+    height: 13.33rem;
+}
+
+label.input-field:has(textarea).large-y {
+    height: 26.66rem;
+}

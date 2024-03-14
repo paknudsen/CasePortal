@@ -1,0 +1,270 @@
+﻿@import '../../variables/colors';
+@import '../../variables/_commonvariables';
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.resize-none {
+    resize: none;
+}
+
+.fal.fa-info-circle { 
+    color: green;
+}
+
+.blue-text-color {
+    color: $color-blue !important;
+}
+
+.inactive-text-color {
+    color: $color-inactive-grey !important;
+}
+
+.inactive-grey-background-color {
+    background-color: $color-form-background-inactive-grey !important;
+}
+
+.blue-background-color {
+    background-color: $color-blue;
+}
+
+.grey-background-color {
+    background-color: $color-grey;
+}
+
+.input-transparent {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+
+.divider-vertical-line {
+    width: 2px;
+    height: 95%;
+    margin: 0 auto;
+    background-color: $color-inactive-grey;
+}
+
+.divider-horizontal-line {
+    border: none;
+    height: 2px; 
+    background-color: $color-black; 
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+}
+
+.btn {
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 0.5em;
+}
+
+.btn-icon {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    white-space: nowrap;
+
+    i {
+        font-size: 1.5rem;
+    }
+}
+
+.btn-icon-sm {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+
+    i {
+        font-size: 1.15rem;
+    }
+}
+
+.btn-icon > *, .btn-icon-sm > * {
+    pointer-events: none;
+}
+
+.green {
+    color: $color-green !important;
+}
+
+.red {
+    color: $color-red !important;
+}
+
+.blue {
+    color: $color-blue !important;
+}
+
+.orange {
+    color: $color-orange !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.z-10 {
+    z-index:10;
+}
+
+.user-select-none {
+    user-select: none
+}
+
+/*https://web.dev/content-visibility/*/
+.content-visibility-auto {
+    content-visibility: auto;
+}
+
+.tippy-box {
+    z-index: 1000000001;
+}
+
+.min-width-200 {
+    min-width:200px;
+}
+
+.margin-left-negative-15{
+    margin-left:-15px;
+}
+
+.width-200{
+    width:200px;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.bottom-0 {
+    bottom: 0px;
+}
+
+.img-wrapper {
+    display: flex;
+    --img-wrapper-size: 63px;
+    width: var(--img-wrapper-size);
+    height: var(--img-wrapper-size);
+    justify-content: center;
+    align-items: center;
+    outline: 5px solid white;
+    border-radius: 5px;
+    margin: 5px;
+
+    img {
+        max-width: auto;
+        max-height: var(--img-wrapper-size);
+    }
+}
+
+.img-wrapper-small {
+    --img-wrapper-size: 25px;
+}
+
+.rotate-45deg {
+    transform: rotate(45deg);
+}
+
+i.icon {
+    border: none;
+    font-size: 1.15rem;
+    color: $color-form-text-black;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+i.far.icon {
+    font-family: inherit;
+    font-weight: inherit;
+
+    &::before {
+        font-family: var(--fa-font-family-pro);
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+}
+
+.hover-color-blue:hover {
+    color: $color-blue;
+    cursor: pointer;
+}
+
+.fa-comment-lines {
+
+    &::after {
+        //Comment text is added to a dataattribute because we want to use
+        //font awesome font-family for the icon and another font for the comment text.
+        content: attr(data-comment-text);
+        font-family: var(--font-family-default);
+        margin-left: 0.4rem;
+    }
+}   
+
+h2.content-title {
+    font-size: 1.6rem;
+    color: $color-form-text-black;
+    font-weight: bold;
+}
+
+/* Standalone pill design */
+.pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 2rem;
+    color: $color-white;
+    font-weight: bold;
+    height: 2.5rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.split-pill {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+    border-radius: 2rem;
+    height: 2.5rem;
+    overflow: hidden;
+    width: 100%;
+
+    .split-pill-section {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding: 0;
+        border-radius: 0;
+        border: none;
+        text-align: center;
+        color: $color-white;
+        font-weight: bold;
+        pointer-events: none;
+    }
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+
+.bg-color-red { background-color: $color-red !important;  }
+.bg-color-green { background-color: $color-green !important; }
+.bg-color-orange { background-color: $color-orange !important; }
+.bg-color-blue { background-color: $color-blue !important; }
+.bg-color-white { background-color: $color-white !important; }
+.color-light-gray { color: $color-form-text-gray !important; }
+.color-white { color: $color-white !important; }
+.color-black { color: $color-form-text-black !important; }

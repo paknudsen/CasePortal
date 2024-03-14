@@ -1,0 +1,12 @@
+.two-col-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1em;
+  align-items: center;
+  justify-items: end;
+
+  *:nth-child(even) {
+    margin: 0.125rem 0;
+    justify-self: flex-start;
+  }
+}

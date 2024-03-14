@@ -1,0 +1,30 @@
+﻿// Column Selector hide styles
+@mixin hide-col-x {
+    @for $i from 1 through 30 {
+        &.hide-col-#{$i} {
+            > thead > tr > th:nth-of-type(#{$i}), > tbody > tr > td:nth-of-type(#{$i}) {
+                display: none !important;
+            }
+        }
+    }
+}
+
+// Column Selector hide styles
+@mixin extended-hide-col-x {
+    @for $i from 31 through 100 {
+        &.hide-col-#{$i} {
+            > thead > tr > th:nth-of-type(#{$i}), > tbody > tr > td:nth-of-type(#{$i}) {
+                display: none !important;
+            }
+        }
+    }
+}
+
+
+@mixin max-width-x-percent {
+    @for $i from 1 through 10 {
+        .max-width-#{$i*10}-percent { 
+            max-width: calc($i*10vw);
+        }
+    }
+}

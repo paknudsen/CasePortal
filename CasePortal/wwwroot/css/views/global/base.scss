@@ -1,0 +1,63 @@
+﻿@import '../../variables/colors';
+
+/** Site wide styles */
+html {
+    font-size: 10px; // Reset baseline (10px == 1rem)
+}
+
+body {
+    font-family: 'Open Sans', 'Verdana', sans-serif;
+}
+
+.view-wrapper {
+    padding: 3.167em 1em;
+    background-color: $color-form-background-inactive-grey;
+    min-height: 100vh;
+}
+
+.view-wrapper-lite {
+    padding: 1em;
+    background-color: $color-form-background-inactive-grey;
+}
+
+.tabaction-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4em;
+
+    .tabaction-msg-wrapper {
+        display: flex;
+        align-items: center;
+        min-height: 3em;
+        width: -webkit-fill-available;
+
+        i {
+            padding: 0 1em 0 0.8em;
+        }
+    }
+
+    .tabaction-actionwrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        span {
+            display: inline-flex;
+
+            button {
+                white-space: nowrap;
+                margin: 10px 0 10px 10px;
+                min-width: 9.75em;
+                min-height: 3em;
+
+                &.clear-all {
+                    background-color: white;
+                    color: $color-form-text-black;
+                    border: 1px solid $color-form-text-black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

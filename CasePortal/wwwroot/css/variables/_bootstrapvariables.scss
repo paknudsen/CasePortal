@@ -1,0 +1,103 @@
+@import '_colors.scss';
+
+/// COMPONENT START
+
+$border-width: 1px !default;
+$border-color: $color-gray-300 !default;
+$border-radius: .25rem !default;
+
+/// COMPONENT END
+
+
+/// FONT START
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+
+/// FONT END
+
+
+/// SPACING START
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge( ( 0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 3) ), $spacers );
+
+/// SPACING END
+
+
+/// SIZING START
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge( ( 1: 1%, 25: 25%, 49: 49%, 50: 50%, 75: 75%, 100: 100%, auto: auto ), $sizes );
+
+/// SIZING END
+
+
+/// HEADING START
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$headings-margin-bottom: calc($spacer / 2) !default;
+$headings-font-family: null !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.2 !default;
+$headings-color: null !default;
+
+$form-grid-gutter-width: 10px !default;
+
+/// HEADING END
+
+
+/// TABLE START
+
+$table-cell-padding: .75rem !default;
+
+$table-color: $color-gray-900 !default;
+$table-bg: null !default;
+$table-accent-bg: rgba($color-ui-black, .05) !default;
+
+$table-border-width: $border-width !default;
+$table-border-color: $border-color !default;
+
+$table-dark-color: $color-white !default;
+$table-dark-bg: $color-gray-800 !default;
+$table-dark-accent-bg: rgba($color-white, .05) !default;
+$table-dark-hover-color: $table-dark-color !default;
+$table-dark-hover-bg: rgba($color-white, .075) !default;
+$table-dark-border-color: lighten($table-dark-bg, 7.5%) !default;
+$table-dark-color: $color-white !default;
+
+/// TABLE END
+
+
+/// LIST GROUP START
+
+$list-group-color: null !default;
+$list-group-bg: $color-white !default;
+$list-group-border-color: rgba($color-ui-black, .125) !default;
+$list-group-border-width: $border-width !default;
+$list-group-border-radius: $border-radius !default;
+
+$list-group-item-padding-y: .75rem !default;
+$list-group-item-padding-x: 1.25rem !default;
+
+$list-group-hover-bg: $color-light-grey !default;
+
+$list-group-disabled-color: $color-gray-600 !default;
+$list-group-disabled-bg: $list-group-bg !default;
+
+$list-group-action-color: $color-gray-700 !default;
+$list-group-action-hover-color: $list-group-action-color !default;
+
+$list-group-action-active-color: $color-gray-900 !default;
+$list-group-action-active-bg: $color-gray-200 !default;
+
+/// LIST GROUP END

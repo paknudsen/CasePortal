@@ -1,0 +1,802 @@
+@use "sass:math";
+
+@import '../../variables/_colors.scss';
+@import '../../variables/_bootstrapvariables.scss';
+@import '../../variables/_bootstrapmixins.scss';
+
+/// COMMON START
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-gray-900;
+    text-align: left;
+    background-color: $color-white;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/// COMMON END
+
+
+/// HEADING START
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1, .h1 { font-size: $h1-font-size; }
+h2, .h2 { font-size: $h2-font-size; }
+h3, .h3 { font-size: $h3-font-size; }
+h4, .h4 { font-size: $h4-font-size; }
+h5, .h5 { font-size: $h5-font-size; }
+h6, .h6 { font-size: $h6-font-size; }
+
+/// HEADING END
+
+
+/// LINK START
+
+a {
+  color: $color-blue;
+  text-decoration: none;
+  background-color: transparent;
+}
+a {
+  color: $color-blue;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/// LINK END
+
+
+/// LISTS START
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+/// LISTS END
+
+
+/// FORM START
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-#{$form-grid-gutter-width} / 2);
+    margin-left: calc(-#{$form-grid-gutter-width} / 2);
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: calc($form-grid-gutter-width / 2);
+        padding-left: calc($form-grid-gutter-width / 2);
+    }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+}
+textarea.form-control {
+  height: auto;
+}
+
+/// FORM END
+
+
+/// MARGINS / PADDING START
+
+$infix: "";
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $spacers {
+    .#{$abbrev}-#{$size} { #{$prop}: $length !important; }
+    .#{$abbrev}t-#{$size},
+    .#{$abbrev}y-#{$size} {
+      #{$prop}-top: $length !important;
+    }
+    .#{$abbrev}r-#{$size},
+    .#{$abbrev}x-#{$size} {
+      #{$prop}-right: $length !important;
+    }
+    .#{$abbrev}b-#{$size},
+    .#{$abbrev}y-#{$size} {
+      #{$prop}-bottom: $length !important;
+    }
+    .#{$abbrev}l-#{$size},
+    .#{$abbrev}x-#{$size} {
+      #{$prop}-left: $length !important;
+    }
+  }
+}
+
+// Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
+@each $size, $length in $spacers {
+  @if $size != 0 {
+    .m-n#{$size} { margin: -$length !important; }
+    .mt-n#{$size},
+    .my-n#{$size} {
+      margin-top: -$length !important;
+    }
+    .mr-n#{$size},
+    .mx-n#{$size} {
+      margin-right: -$length !important;
+    }
+    .mb-n#{$size},
+    .my-n#{$size} {
+      margin-bottom: -$length !important;
+    }
+    .ml-n#{$size},
+    .mx-n#{$size} {
+      margin-left: -$length !important;
+    }
+  }
+}
+
+// Some special margin utils
+.m-auto { margin: auto !important; }
+.mt-auto,
+.my-auto {
+  margin-top: auto !important;
+}
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+.mb-auto,
+.my-auto {
+  margin-bottom: auto !important;
+}
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+
+/// MARGINS / PADDING END
+
+
+/// DISPLAY START
+
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+
+@each $value in $displays {
+  .d-#{$value} { display: $value !important; }
+}
+
+/// DISPLAY END
+
+
+/// WIDTH / HEIGHT START
+
+@each $prop, $abbrev in (width: w, height: h) {
+  @each $size, $length in $sizes {
+    .#{$abbrev}-#{$size} { #{$prop}: $length !important; }
+  }
+}
+
+/// WIDTH / HEIGHT END
+
+
+/// FONT START
+
+.font-weight-bold {
+  font-weight: 700!important;
+}
+
+/// FONT EMD
+
+
+/// INPUT START
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/// INPUT END
+
+
+/// LABEL START
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+/// LABEL END
+
+
+/// TEXT START
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center!important;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-light {
+    color: $color-light-grey !important;
+}
+.text-dark {
+    color: $color-gray-800 !important;
+}
+
+.text-primary {
+  color: $color-blue!important;
+}
+.text-secondary {
+    color: $color-gray-600 !important;
+}
+.text-success {
+    color: $color-green !important;
+}
+.text-danger {
+    color: $color-red !important;
+}
+.text-warning {
+  color: #ffc107!important;
+}
+
+.text-nowrap {
+    white-space: nowrap !important;
+}
+
+/// TEXT END
+
+
+/// UTILITY START
+
+.float-left {
+  float: left!important;
+}
+.float-right {
+  float: right!important;
+}
+
+.justify-content-start   { justify-content: flex-start !important; }
+.justify-content-end     { justify-content: flex-end !important; }
+.justify-content-center  { justify-content: center !important; }
+.justify-content-between { justify-content: space-between !important; }
+.justify-content-around  { justify-content: space-around !important; }
+
+.align-items-start    { align-items: flex-start !important; }
+.align-items-end      { align-items: flex-end !important; }
+.align-items-center   { align-items: center !important; }
+.align-items-baseline { align-items: baseline !important; }
+.align-items-stretch  { align-items: stretch !important; }
+
+.position-absolute {
+  position: absolute!important;
+}
+.position-relative {
+  position: relative!important;
+}
+
+/// UTILITY END
+
+
+/// ALERT START
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+/// ALERT END
+
+
+/// BUTTON START
+
+.btn {
+  // Already present in our global styles
+  font-size: 1.15rem;
+  font-weight: 600;
+
+  // Bootstrap btn styles
+  display: inline-block;
+  color: $color-form-text-black;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+  color: $color-white;
+  background-color: $color-blue;
+  border-color: $color-blue;
+}
+
+.btn-secondary {
+    color: $color-form-text-black;
+    background-color: $color-light-grey;
+    border-color: $color-light-grey;
+}
+.btn-secondary.disabled, .btn-secondary:disabled {
+    color: $color-form-text-black;
+    background-color: $color-light-grey;
+    border-color: $color-light-grey;
+}
+
+.btn-group, .btn-group-vertical {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.btn.disabled, .btn:disabled {
+  opacity: .65;
+}
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+button, select {
+  text-transform: none;
+}
+button, input {
+  overflow: visible;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button {
+  border-radius: 0;
+}
+button, select {
+  text-transform: none;
+}
+button, input {
+  overflow: visible;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.btn-success {
+    color: $color-white;
+    background-color: $color-green;
+    border-color: $color-green;
+}
+
+.btn-danger {
+    color: $color-white;
+    background-color: $color-red;
+    border-color: $color-red;
+}
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  appearance: none;
+}
+
+.btn-group-lg > .btn, .btn-lg {
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.btn-group-sm > .btn, .btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+.btn-group-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  > .btn, > .btn-group {
+    width: 100%;
+  }
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: $color-ui-black;
+    text-shadow: 0 1px 0 $color-white;
+    opacity: .5;
+}
+
+/// BUTTON END
+
+
+/// BACKGROUND START
+
+.bg-light {
+    background-color: $color-light-grey;
+}
+.bg-success {
+    background-color: $color-green;
+}
+
+.bg-primary {
+    background-color: $color-blue;
+}
+
+.bg-secondary {
+    background-color: $color-gray-600;
+}
+
+/// BACKGROUND END
+
+
+/// TABLE START
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: $color-gray-900;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.table>tbody>tr>td, .table>thead>tr>th {
+  border: 0;
+  padding: 3px 6px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  vertical-align: middle;
+}
+
+/// TABLE END
+
+
+/// CONTAINER START
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/// CONTAINER END
+
+
+/// ROW START
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/// ROW END
+
+
+/// COL START
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  @include grid-column;
+}
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%; // Reset earlier grid tiers
+  @include grid-column;
+}
+
+$columns: 12;
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    flex: 0 0 percentage(math.div($i, $columns));
+    max-width: percentage(math.div($i, $columns));
+    @include grid-column;
+  }
+}
+
+/// COL END
+
+
+/// TABLE START
+
+//
+// Basic Bootstrap table
+//
+
+.table {
+  width: 100%;
+  margin-bottom: $spacer;
+  color: $table-color;
+  background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+
+  th,
+  td {
+    padding: $table-cell-padding;
+    vertical-align: top;
+    border-top: $table-border-width solid $table-border-color;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: (2 * $table-border-width) solid $table-border-color;
+  }
+
+  tbody + tbody {
+    border-top: (2 * $table-border-width) solid $table-border-color;
+  }
+}
+
+// Border versions
+//
+// Add or remove borders all around the table and between all the columns.
+
+.table-bordered {
+  border: $table-border-width solid $table-border-color;
+
+  th,
+  td {
+    border: $table-border-width solid $table-border-color;
+  }
+
+  thead {
+    th,
+    td {
+      border-bottom-width: 2 * $table-border-width;
+    }
+  }
+}
+
+.table-borderless {
+  th,
+  td,
+  thead th,
+  tbody + tbody {
+    border: 0;
+  }
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped {
+  tbody tr:nth-of-type(odd) {
+    background-color: $table-accent-bg;
+  }
+}
+
+// Dark styles
+//
+// Same table markup, but inverted color scheme: dark background and light text.
+
+// stylelint-disable-next-line no-duplicate-selectors
+.table {
+  .thead-dark {
+    th {
+      color: $table-dark-color;
+      background-color: $table-dark-bg;
+      border-color: $table-dark-border-color;
+    }
+  }
+}
+
+/// TABLE END
+
+
+/// LIST GROUP START
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+
+  // No need to set list-style: none; since .list-group-item is block level
+  padding-left: 0; // reset padding because ul and ol
+  margin-bottom: 0;
+}
+
+// Interactive list items
+//
+// Use anchor or button elements instead of `li`s or `div`s to create interactive
+// list items. Includes an extra `.active` modifier class for selected items.
+
+.list-group-item-action {
+  width: 100%; // For `<button>`s (anchors become 100% by default though)
+  color: $list-group-action-color;
+  text-align: inherit; // For `<button>`s (anchors inherit)
+
+  &:active {
+    color: $list-group-action-active-color;
+    background-color: $list-group-action-active-bg;
+  }
+}
+
+// Individual list items
+//
+// Use on `li`s or `div`s within the `.list-group` parent.
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: $list-group-item-padding-y $list-group-item-padding-x;
+  // Place the border on the list items and negative margin up for better styling
+  margin-bottom: -$list-group-border-width;
+  color: $list-group-color;
+  background-color: $list-group-bg;
+  border: $list-group-border-width solid $list-group-border-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $list-group-disabled-color;
+    pointer-events: none;
+    background-color: $list-group-disabled-bg;
+  }
+
+  // Include both here for `<a>`s and `<button>`s
+  &.active {
+    z-index: 2; // Place active items above their siblings for proper border styling
+  }
+}
+
+// Flush list items
+//
+// Remove borders and border-radius to keep list group items edge-to-edge. Most
+// useful within other components (e.g., cards).
+
+.list-group-flush {
+  .list-group-item {
+    border-right: 0;
+    border-left: 0;
+
+    &:last-child {
+      margin-bottom: -$list-group-border-width;
+    }
+  }
+
+  &:first-child {
+    .list-group-item:first-child {
+      border-top: 0;
+    }
+  }
+
+  &:last-child {
+    .list-group-item:last-child {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+}
+
+/// LIST GROUP END
+
+
+/// BADGE START
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.badge-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
+
+/// BADGE END
+
+///DISPLAY PROPERTIES START
+
+[hidden] {
+    display: none !important;
+}
+
+.d-none{
+    display: none !important;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+///DISPLAY PROPERTIES END
+
+.flex-column {
+    flex-direction: column;
+}

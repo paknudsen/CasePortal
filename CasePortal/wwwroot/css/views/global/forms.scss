@@ -1,0 +1,480 @@
+﻿@import '../../lib/fontawesome/_variables.scss';
+@import '../../variables/_colors.scss';
+@import '../../variables/_svgicons.scss';
+@import '../../variables/_mixins.scss';
+@import '../global/inputStyles.scss';
+@import '../global/selectStyles.scss';
+@import '../global/textareaStyles.scss';
+
+select {
+  padding: .25rem;
+  padding-right: 3rem;
+  /*min-width: 6.5rem;*/
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.25);
+  vertical-align: middle;
+  margin-left: .5rem;
+  accent-color: $color-blue;
+}
+
+input[type="radio"] {
+  margin-right: .3rem;
+}
+
+
+// Form element styles slightly compressed to work in tables
+// More full elements extended via field-wrapper
+input[type=text].input-field, 
+input[type=url].input-field, 
+input[type="search"].input-field, 
+input[type=tel].input-field,
+input[type=number].input-field, 
+textarea, 
+select {
+  border: 1px solid $color-inactive-grey;
+  border-radius: 5px;
+  padding-left: 1.25rem;
+  height: 3.25rem;
+}
+
+fieldset {
+  border: 1px solid $color-inactive-grey;
+  border-radius: 5px;
+}
+
+input[type=text].input-field:focus, 
+input[type=url].input-field:focus, 
+input[type="search"].input-field:focus, 
+input[type=tel].input-field:focus, 
+input[type=number].input-field:focus, 
+textarea:focus, 
+select:focus {
+  outline: none;
+  border: 1px solid $color-blue;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px $color-blue;
+}
+
+// Form elements adjustments for use outside of tables
+// Typically in columns
+.field-wrapper {
+  margin-bottom: 2rem;
+  width: 100%;
+
+  input[type=text].input-field, 
+  input[type=url].input-field, 
+  input[type="search"].input-field, 
+  input[type=tel].input-field,
+  input[type=number].input-field, 
+  textarea, 
+  select {
+    height: 3.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $color-form-text-black;
+    width: 100%;
+  }
+
+  select:not(:disabled):hover {
+    cursor: pointer;
+  }
+
+  .js-flatpickr-container {
+    position: absolute;
+    z-index: 999;
+  }
+}
+
+.field-label {
+  font-size: 1.1rem;
+  color: $color-form-text-black;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: inline;
+}
+
+
+// Disabled look
+input[disabled],
+input[readonly], 
+select[disabled],
+[data-custom-input-type][disabled], 
+[data-custom-input-type][readonly] {
+  border: none;
+  background-color: $color-form-background-inactive-grey;
+}
+
+select[disabled] {
+  background-image: none;
+}
+
+[data-custom-input-type][disabled],
+[data-custom-input-type][readonly] {
+  pointer-events: none;
+}
+
+select {
+  // Reset select look https://css-tricks.com/almanac/properties/a/appearance/
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  // Custom Select Icon
+  background-image: $svg-icon-caret-down;
+  background-repeat: no-repeat, repeat;
+  background-position: right 1rem top 50%, 0 0;
+  background-size: 0.9em auto, 100%;
+}
+
+input[type="search"].input-field {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="search"].input-field::-webkit-search-cancel-button {
+  font-size: 2rem;
+  margin-right: 0.6rem;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+// Specific input form element styles
+.input-gtin {
+  width: 12rem;
+}
+
+.input-4-digits {
+  width: 5rem;
+}
+
+.input-6-digits {
+  width: 6rem;
+}
+
+.input-8-digits {
+  width: 7rem;
+}
+
+.input-extra-wide {
+  width: 36rem;
+}
+
+.input-icon {
+  min-width: 10rem; 
+}
+
+.field-icon {
+  background-repeat: no-repeat, repeat;
+  background-position: right 1em top 50%, 0 0;
+  background-size: 1em auto, 100%;
+}
+
+.field-icon-percent-muted {
+  background-image: $svg-icon-percent-muted;
+}
+
+.field-icon-percent {
+  background-image: $svg-icon-percent;
+}
+
+.field-icon-calendar-alt {
+  background-image: $svg-icon-calendar-alt;
+}
+
+.field-icon-search {
+  background-image: $svg-icon-search;
+}
+
+.section-title {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.text-width-10 {
+  width: 10rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text-width-30 {
+  width: 30rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// Form elements adjustments for use outside of tables. Small version of the .field-wrapper
+.field-wrapper-sm {
+  @include max-width-x-percent;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.583em;
+  position: relative;
+
+  label {
+    white-space: nowrap;
+    font-weight: 600;
+    color: $color-form-text-black;
+  }
+
+  input, select, textarea {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .autocomplete-input {
+    flex-grow: 1;
+  }
+
+  .doubleinput {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    & > * {
+      margin-right: 0.583em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  label.left-date-label {
+    padding-left: 1.417rem;
+    padding-right: 3.917rem;
+    margin-bottom: 0;
+  }
+
+  .max-width-60-percent {
+    max-width: 60%;
+  }
+
+  .js-flatpickr-container {
+    position: absolute;
+    z-index: 999;
+  }
+}
+
+
+label.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 0;
+
+  input[type="checkbox"] {
+    margin-right: 6px;
+    margin-left: 2px;
+    width: 1.083em;
+    height: 1.083em;
+  }
+}
+
+// modified, focused and invalid styles. What styles should be shown if multiple classes are present?
+input[type=text].input-field.modified,
+input[type=url].input-field.modified,
+input[type="search"].input-field.modified,
+input[type=tel].input-field.modified,
+input[type=number].input-field.modified,
+.modified {
+    border: 1px solid $color-orange !important;
+    border-radius: 5px !important;
+}
+
+input[type=text].input-field.focused,
+input[type=url].input-field.focused,
+input[type="search"].input-field.focused,
+input[type=tel].input-field.focused,
+input[type=number].input-field.focused,
+.focused {
+    border: 1px solid $color-blue !important;
+    border-radius: 5px !important;
+    box-shadow: 0px 0px 3px #3499F1 !important;
+}
+
+input[type=text].input-field.modified.focused,
+input[type=text].input-field.focused.invalid,
+input[type=text].input-field.focused.invalid-backend,
+input[type=text].input-field.modified.focused.invalid,
+input[type=text].input-field.modified.focused.invalid-backend,
+input[type=url].input-field.modified.focused,
+input[type=url].input-field.focused.invalid,
+input[type=url].input-field.focused.invalid-backend,
+input[type=url].input-field.modified.focused.invalid,
+input[type=url].input-field.modified.focused.invalid-backend,
+input[type="search"].input-field.modified.focused,
+input[type="search"].input-field.focused.invalid,
+input[type="search"].input-field.focused.invalid-backend,
+input[type="search"].input-field.modified.focused.invalid,
+input[type="search"].input-field.modified.focused.invalid-backend,
+input[type=tel].input-field.modified.focused,
+input[type=tel].input-field.focused.invalid,
+input[type=tel].input-field.focused.invalid-backend,
+input[type=tel].input-field.modified.focused.invalid,
+input[type=tel].input-field.modified.focused.invalid-backend,
+input[type=number].input-field.modified.focused,
+input[type=number].input-field.focused.invalid,
+input[type=number].input-field.focused.invalid-backend,
+input[type=number].input-field.modified.focused.invalid,
+input[type=number].input-field.modified.focused.invalid-backend,
+.modified.focused,
+.focused.invalid,
+.focused.invalid-backend,
+.modified.focused.invalid,
+.modified.focused.invalid-backend {
+    border: 1px solid $color-blue !important;
+    border-radius: 5px !important;
+    box-shadow: 0px 0px 3px #3499F1 !important;
+}
+
+input[type=text].input-field.modified.invalid,
+input[type=url].input-field.modified.invalid,
+input[type="search"].input-field.modified.invalid,
+input[type=tel].input-field.modified.invalid,
+input[type=number].input-field.modified.invalid,
+.modified.invalid,
+input[type=text].input-field.input-field.modified.invalid-backend,
+input[type=url].input-field.input-field.modified.invalid-backend,
+input[type="search"].input-field.modified.invalid-backend,
+input[type=tel].input-field.modified.invalid-backend,
+input[type=number].input-field.modified.invalid-backend,
+.modified.invalid-backend {
+    box-shadow: 0 0 5px $color-red-rgba !important;
+    border: 1px solid $color-red-rgba !important;
+}
+
+
+.warning-icon {
+  color: $color-orange;
+  font-size: 1.2rem;
+  float: right;
+}
+
+// Validation
+.invalid, .invalid-backend {
+    box-shadow: 0 0 5px $color-red-rgba !important;
+    border: 1px solid $color-red-rgba !important;
+}
+
+// appearance in safari blocks this class from showing box-shadow
+// set appearance to none in order for it to work on Ipad
+input.input-field:not([type=checkbox]):not([type=radio]).invalid, 
+input.input-field:not([type=checkbox]):not([type=radio]).invalid-backend {
+    appearance: none;
+} 
+
+.tox-tinymce.invalid {
+  box-shadow: 0 0 5px $color-red-rgba;
+  border: 1px solid $color-red-rgba;
+}
+
+.search-input-wrapper {
+  position: relative;  
+  
+  i {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+  }
+
+  &.disabled {
+    i {
+      pointer-events: none;
+      opacity: 0.4;
+    }
+  }
+}
+
+input[type="text"].input-field.search-input {    
+  border-radius: 100px;  
+  padding: 1em;  
+  font-weight: 700;  
+  color: #303749;
+  
+  &:disabled {
+    border: 1px solid #f6f7fb;
+  }
+  
+  &::placeholder {
+    opacity: 0.4;
+  }
+  
+  &:disabled::placeholder {
+    opacity: 0.2;
+  }
+}
+
+.search-input-icon {
+  cursor: pointer;
+}
+
+.jumbotron {
+  padding: 30px 20px;
+  border-radius: 6px;
+  background-color: rgb(238, 238, 238);
+}
+
+.drag-element {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  display: flex;
+  justify-content: space-between;
+  cursor: grab;
+  align-items: center;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+
+    i {
+      font-size: 1.5rem;
+      color: $color-red-rgba;
+      cursor: pointer;
+    }
+  }
+}
+
+// Info icon
+.far.info-icon::before {
+    color: $color-blue;
+    content: fa-content($fa-var-question-circle);
+    font-size: 1.2rem;
+}
+
+// Warning icon
+.far.warning-icon::before {
+    color: $color-orange;
+    content: fa-content($fa-var-exclamation-triangle);
+    font-size: 1.2rem;
+}
+
+// Error icon
+.far.error-icon::before {
+    color: $color-red;
+    content: fa-content($fa-var-exclamation-circle);
+    font-size: 1.2rem;
+}

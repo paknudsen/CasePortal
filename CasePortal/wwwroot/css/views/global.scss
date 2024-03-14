@@ -1,0 +1,18 @@
+/**
+    Only styles/files that are used in the majority of pages/views should be added to this bundle.
+    All other styles/files should be referenced directly in the markup of the specific pages/views 
+    to allow independent loading and caching on clients
+*/
+@import '../views/global/bootstrapstyles.scss'; // Commonly used classes ported from Bootstrap
+
+@import '../variables/_colors.scss'; // Global color variables
+@import '../variables/_svgicons.scss'; // URL encoded svgs variables for use in background-images
+
+@import '../views/global/fontfaces'; // Global available font-face's
+
+@import '../views/global/base.scss'; // Site base styles
+@import '../views/global/common.scss'; // Commonly used classes
+@import '../views/global/nav.scss'; // Global navigation bar styles
+@import '../views/global/forms.scss'; // Global forms styles
+@import '../views/global/tables.scss'; // Global table styles
+@import '../views/shared/layout/layout.scss'; // Layouts
