@@ -16,7 +16,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="..\products.json" Link="products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="NServiceBus" Version="8.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Config\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\ContextConfigurationSection.config" Link="Config\ContextConfigurationSection.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NK.Data.ProductRepositories\NK.Data.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

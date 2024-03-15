@@ -1,33 +1,9 @@
 ﻿using System;
 using System.Net;
+using NK.Data.Repositories.Extensions;
+using NK.DataRepositories;
 using NK.Inventory.ProductService;
 using NServiceBus;
-
-//class Program
-//{
-//    static async Task Main(string[] args)
-//    {
-//        var endpointConfiguration = new EndpointConfiguration("NK.Inventory.ProductService");
-//        endpointConfiguration.UseTransport<LearningTransport>();
-
-//        var endpointInstance = await Endpoint.Start(endpointConfiguration)
-//            .ConfigureAwait(false);
-
-
-
-//        Console.WriteLine("Ready.");
-//        string line;
-//        while ((line = Console.ReadLine()) != null)
-//        {
-//            var message = new SimulateProductActionMessage { ProductId = 1234 };
-//            await endpointInstance.SendLocal(message);
-//        }
-
-//        await endpointInstance.Stop()
-//            .ConfigureAwait(false);
-//    }
-//}
-
 
 public static class Program
 {
@@ -36,7 +12,15 @@ public static class Program
         var endpointConfiguration = new EndpointConfiguration("NK.Inventory.ProductService");
         endpointConfiguration.UseTransport<LearningTransport>();
 
+        // Populate product repo with dummy data
+        using (var repo = new ProductRepository())
+        {
+            repo.Products.FillProductRepositoryMock();
+            repo.Commit();
+        }
+
         var endpointInstance = Endpoint.Start(endpointConfiguration).GetAwaiter().GetResult();
+
 
         Console.WriteLine("Ready to process message. Input options: simulate = send message, exit = exit program.");
         string line;
@@ -44,7 +28,7 @@ public static class Program
         {
             if(line == "simulate")
             {
-                var message = new SimulateProductActionMessage { ProductId = 1234 };
+                var message = new SimulateProductActionMessage { ProductId = 3218130 };
                 endpointInstance.SendLocal(message).GetAwaiter().GetResult();
             }
 
@@ -54,4 +38,5 @@ public static class Program
             }
         }
     }
+
 }

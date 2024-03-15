@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NK.Data.Repositories.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,9 @@ namespace NK.Inventory.ProductService
             Console.WriteLine($"Received message: {message.ProductId}");
 
             // Perform any necessary processing
+            new SimulateProductActionProcess().Process(message.ProductId);
+
+
             return Task.CompletedTask;
         }
     }
