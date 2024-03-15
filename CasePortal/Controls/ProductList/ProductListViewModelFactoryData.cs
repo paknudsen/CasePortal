@@ -1,4 +1,5 @@
 ﻿using NK.Data.Repositories.Entities;
+using NK.DataRepositories;
 using NK.Web.CasePortal.Controls.Base.Models;
 
 namespace NK.Web.CasePortal.Controls.ProductList
@@ -12,7 +13,20 @@ namespace NK.Web.CasePortal.Controls.ProductList
     {
         public List<ProductViewModel> GetAllProducts()
         {
-            throw new NotImplementedException();
+            using (var repo = new ProductRepository())
+            {
+                var products = repo.Products.Get().Select(t => new ProductViewModel(t.ProductId.ToString())
+                {
+                    Name = t.Name,
+                    Description = t.ShortDescription,
+                    SalesPrice = (decimal)t.FinalSalesPrice,
+                    ImageUrl = t.ImageLargeUrl,
+                }).ToList();
+
+                return products;
+            }
         }
+
+
     }
 }

@@ -23,6 +23,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B7166332-9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NK.Test.Data.Core", "NK.Test.Data.Core\NK.Test.Data.Core.csproj", "{FB354793-4DA3-4A2E-981B-F084A88318F8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NK.Services", "NK.Services", "{0ADCDC89-29EC-4CB1-BB81-21A34A65DE60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NK.Inventory.Services", "NK.Inventory.Services", "{0713C937-33FE-4F4E-8AAD-F41A52F9A74B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NK.Inventory.ProductService", "NK.Inventory.ProductService\NK.Inventory.ProductService.csproj", "{EE17EBC7-3EE7-46D2-A917-7B7F0934E615}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,12 +59,18 @@ Global
 		{FB354793-4DA3-4A2E-981B-F084A88318F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB354793-4DA3-4A2E-981B-F084A88318F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB354793-4DA3-4A2E-981B-F084A88318F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE17EBC7-3EE7-46D2-A917-7B7F0934E615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE17EBC7-3EE7-46D2-A917-7B7F0934E615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE17EBC7-3EE7-46D2-A917-7B7F0934E615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE17EBC7-3EE7-46D2-A917-7B7F0934E615}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FB354793-4DA3-4A2E-981B-F084A88318F8} = {B7166332-9C28-4457-AD88-177BE66A7D41}
+		{0713C937-33FE-4F4E-8AAD-F41A52F9A74B} = {0ADCDC89-29EC-4CB1-BB81-21A34A65DE60}
+		{EE17EBC7-3EE7-46D2-A917-7B7F0934E615} = {0713C937-33FE-4F4E-8AAD-F41A52F9A74B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {773CD730-E695-417E-8F80-DE13F7685DDE}

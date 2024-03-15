@@ -17,6 +17,11 @@ namespace NK.Web.CasePortal.Controls.ProductList
             _productListViewModelFactoryData = productListViewModelFactoryData;
         }
 
+        public ProductListViewModelFactory():this(new ProductListViewModelFactoryData())
+        {
+
+        }
+
         public ProductListViewModel CreateFrom()
         {
             var viewModel = new ProductListViewModel();

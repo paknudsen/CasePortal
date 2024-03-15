@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NK.Web.CasePortal.Controls.ProductList;
 using System.Diagnostics;
 
 namespace NK.Web.CasePortal.Controls.Home.Controllers
@@ -16,7 +17,8 @@ namespace NK.Web.CasePortal.Controls.Home.Controllers
         [Route("")]
         public IActionResult Index()
         {
-            return View();
+            var viewModel = new ProductListViewModelFactory().CreateFrom();
+            return (IActionResult)viewModel;
         }
     }
 }
