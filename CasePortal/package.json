@@ -1,5 +1,5 @@
 {
-  "description": "Do not change this config before confering with PA",
+  "description": "Do not change this config before confering with front end lead",
   "devDependencies": {
     "del": "6.0.0",
     "gulp": "4.0.2",
