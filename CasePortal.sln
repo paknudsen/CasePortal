@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasePortal", "CasePortal\CasePortal.csproj", "{9481BB5D-C794-40B9-96C2-368728F09037}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NK.Web.CasePortal", "CasePortal\NK.Web.CasePortal.csproj", "{9481BB5D-C794-40B9-96C2-368728F09037}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NK.BusinessProcess.Core", "NK.BusinessProcess.Core\NK.BusinessProcess.Core.csproj", "{A1F2D0B8-867E-4B4F-8497-B6FC54CD949B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NK.BusinessProcess.Web", "NK.BusinessProcess.Web\NK.BusinessProcess.Web.csproj", "{9527FD6A-063B-4F9C-93AA-EDD597F472AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NK.Data.Repository.Core", "NK.Data.Repository.Core\NK.Data.Repository.Core.csproj", "{F3E54927-501C-4070-B723-DE332E77CA46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NK.Data.Repository.Core", "NK.Data.Repository.Core\NK.Data.Repository.Core.csproj", "{F3E54927-501C-4070-B723-DE332E77CA46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NK.Data.Repositories", "NK.Data.ProductRepositories\NK.Data.Repositories.csproj", "{590CCD82-94BB-4FF0-8D78-E2FA2B011DFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NK.Data.Repositories", "NK.Data.ProductRepositories\NK.Data.Repositories.csproj", "{590CCD82-94BB-4FF0-8D78-E2FA2B011DFB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{C9932AAD-5C15-48BD-8256-45CF63DDCA51}"
 	ProjectSection(SolutionItems) = preProject
@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B7166332-9C28-4457-AD88-177BE66A7D41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NK.Test.Data.Core", "NK.Test.Data.Core\NK.Test.Data.Core.csproj", "{FB354793-4DA3-4A2E-981B-F084A88318F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NK.Test.Data.Core", "NK.Test.Data.Core\NK.Test.Data.Core.csproj", "{FB354793-4DA3-4A2E-981B-F084A88318F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
