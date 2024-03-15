@@ -15,5 +15,5 @@ Web application is based on a ASP.NET Core MVC Web App template, with some of ou
 5. Implement the requirements outlined pr email
 
 ## Delivery of finished case
-1. Delete node_modules folder
+1. Delete the node_modules folder from your finished project.
 2. Zip and return by email or fileshare link (do not PR as it will be publicly visible)
