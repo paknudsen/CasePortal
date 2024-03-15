@@ -15,7 +15,8 @@ namespace NK.Web.CasePortal.Controls.ProductList
             var list = new List<ProductViewModel>();
 
             for (int i = 0; i < 10; i++) {
-                var product = new ProductViewModel($"PATEST {i}");
+                var product = new ProductViewModel(i.ToString());
+                product.Name = $"PATEST_{i}";
                 product.SalesPrice = i;
                 list.Add(product);  
             }

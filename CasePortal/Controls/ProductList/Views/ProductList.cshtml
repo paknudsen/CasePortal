@@ -4,9 +4,14 @@
 
 @model NK.Web.CasePortal.Controls.ProductList.Models.ProductListViewModel
 
-<table>
+@section Styles {
+    <link href="/css/views/productlist/productlist.css" asp-append-version="true" />
+}
+
+<table class="table productlist-table">
     <thead>
         <tr>
+            <td>ProductId</td>
             <td>Name</td>
             <td>Price</td>
         </tr>
@@ -15,9 +20,9 @@
         foreach (var item in Model.Products)
         {
             <tr>
-                <td>@item.Name</td>
+                <td>@item.ProductId</td>
+                <td><a asp-controller="ProductDetail" asp-action="ProductDetail" asp-route-id="@item.ProductId">@item.Name</a></td>
                 <td>@item.SalesPrice</td>
-                <td><a asp-asp-controller="ProductDetail" asp-action="Index" asp-route-id="@item.ProductId">@item.ProductId</a>  </td>
             </tr>
         }
     }
