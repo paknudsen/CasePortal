@@ -9,11 +9,11 @@ Web application is based on a ASP.NET Core MVC Web App template, with some of ou
 
 ## Getting Started
 1. Clone project (avoid using a fork as the fork will be publicly visible)
-2. Open in an up to date Visual Studio 2022 instance (any edition will do, including Community
+2. Open solution in an up to date Visual Studio 2022 instance (any edition will do, including Community)
 3. Restore NPM packages
-4. Make sure project builds and runs
+4. Make sure project builds and runs (if you have any issues, follow instructions in email)
 5. Implement the requirements outlined pr email
 
 ## Delivery of finished case
 1. Delete node_modules folder
-2. Zip and return by email (do not PR as it will be publicly visible)
+2. Zip and return by email or fileshare link (do not PR as it will be publicly visible)
