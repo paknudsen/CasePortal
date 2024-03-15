@@ -150,16 +150,16 @@ namespace NK.Data.Repository.Core
             switch (dataSource)
             {
                 case DataSource.EntityFramework:
-                    //_adapter = new EfContextAdapter(this, _contextConnector, _contextName, doBulk, efTimeoutInSeconds, ShopId, useSplitQuery);
+                    throw new NotImplementedException();
                     break;
                 case DataSource.InMemoryFullLoadCache:
-                    //_adapter = new InMemoryFullLoadCacheContextAdapter(this, _contextConnector, _contextName, doBulk, cacheTimeoutInMinutes, efTimeoutInSeconds, ShopId, useSplitQuery);
+                    throw new NotImplementedException();
                     break;
                 case DataSource.InMemoryQueryLoadCache:
-                    //_adapter = new InMemoryQueryLoadCacheContextAdapter(this, _contextConnector, _contextName, doBulk, cacheTimeoutInMinutes, efTimeoutInSeconds, ShopId, useSplitQuery);
+                    throw new NotImplementedException();
                     break;
                 case DataSource.DistributedCache:
-                    //_adapter = new DistributedCacheContextAdapter(this, _contextConnector);
+                    throw new NotImplementedException();
                     break;
                 case DataSource.MockUp:
                     _adapter = new MockUpContextAdaper(this);
