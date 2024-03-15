@@ -4,6 +4,6 @@ namespace NK.Web.CasePortal.Controls.ProductList.Models
 {
     public class ProductListViewModel
     {
-        public List<ProductViewModel> Products { get; set; }
+        public List<ProductViewModel> Products { get; set; } = new List<ProductViewModel>();
     }
 }

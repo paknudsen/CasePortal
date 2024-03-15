@@ -12,7 +12,14 @@ namespace NK.Web.CasePortal.Controls.ProductList
     {
         public List<ProductViewModel> GetAllProducts()
         {
-            throw new NotImplementedException();
+            var list = new List<ProductViewModel>();
+
+            for (int i = 0; i < 10; i++) {
+                var product = new ProductViewModel($"PATEST {i}");
+                product.SalesPrice = i;
+                list.Add(product);  
+            }
+            return list;
         }
     }
 }
