@@ -37,6 +37,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NK.Data.ProductRepositories\NK.Data.Repositories.csproj" />
+    <ProjectReference Include="..\NK.Service.Messages\NK.Service.Messages.csproj" />
   </ItemGroup>
 
 </Project>

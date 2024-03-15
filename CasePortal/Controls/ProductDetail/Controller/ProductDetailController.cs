@@ -19,6 +19,10 @@ namespace NK.Web.CasePortal.Controls.ProductDetail
         {
             if(!int.TryParse(id, out var productId)) return NotFound();
 
+            var model = _productDetailModelFactory.CreateFrom(int.Parse(id));
+
+            if(model == null) return NotFound();
+
             return View("ProductDetail", _productDetailModelFactory.CreateFrom(int.Parse(id)));
         }
     }

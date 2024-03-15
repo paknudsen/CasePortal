@@ -27,12 +27,14 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="NServiceBus" Version="8.1.6" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\NK.BusinessProcess.Core\NK.BusinessProcess.Core.csproj" />
     <ProjectReference Include="..\NK.BusinessProcess.Web\NK.BusinessProcess.Web.csproj" />
     <ProjectReference Include="..\NK.Data.ProductRepositories\NK.Data.Repositories.csproj" />
+    <ProjectReference Include="..\NK.Service.Messages\NK.Service.Messages.csproj" />
   </ItemGroup>
 
   <ItemGroup>

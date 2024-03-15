@@ -3,6 +3,7 @@ using System.Net;
 using NK.Data.Repositories.Extensions;
 using NK.DataRepositories;
 using NK.Inventory.ProductService;
+using NK.Service.Messages;
 using NServiceBus;
 
 public static class Program

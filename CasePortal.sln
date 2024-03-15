@@ -16,6 +16,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{C9932AAD-5C15-48BD-8256-45CF63DDCA51}"
 	ProjectSection(SolutionItems) = preProject
 		ContextConfigurationSection.config = ContextConfigurationSection.config
+		..\..\Users\odd.erik.gronberg\AppData\Local\ParticularSoftware\License.xml = ..\..\Users\odd.erik.gronberg\AppData\Local\ParticularSoftware\License.xml
 		products.json = products.json
 	EndProjectSection
 EndProject
@@ -32,6 +33,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{14569FDA-1C0F-4D3C-B28E-19057C4B9FE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NK.Inventory.Test", "NK.Inventory.Test\NK.Inventory.Test.csproj", "{871A8D73-F14A-4147-951B-F70C8CA393E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NK.Messages", "NK.Messages", "{D4DE067A-08AE-4EB8-9F44-A1EDB0859AD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NK.Service.Messages", "NK.Service.Messages\NK.Service.Messages.csproj", "{6104FE05-6395-44B2-A7C1-B57D0A431B0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +76,10 @@ Global
 		{871A8D73-F14A-4147-951B-F70C8CA393E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{871A8D73-F14A-4147-951B-F70C8CA393E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{871A8D73-F14A-4147-951B-F70C8CA393E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6104FE05-6395-44B2-A7C1-B57D0A431B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6104FE05-6395-44B2-A7C1-B57D0A431B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6104FE05-6395-44B2-A7C1-B57D0A431B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6104FE05-6395-44B2-A7C1-B57D0A431B0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +90,8 @@ Global
 		{EE17EBC7-3EE7-46D2-A917-7B7F0934E615} = {0713C937-33FE-4F4E-8AAD-F41A52F9A74B}
 		{14569FDA-1C0F-4D3C-B28E-19057C4B9FE7} = {0713C937-33FE-4F4E-8AAD-F41A52F9A74B}
 		{871A8D73-F14A-4147-951B-F70C8CA393E5} = {14569FDA-1C0F-4D3C-B28E-19057C4B9FE7}
+		{D4DE067A-08AE-4EB8-9F44-A1EDB0859AD2} = {0ADCDC89-29EC-4CB1-BB81-21A34A65DE60}
+		{6104FE05-6395-44B2-A7C1-B57D0A431B0B} = {D4DE067A-08AE-4EB8-9F44-A1EDB0859AD2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {773CD730-E695-417E-8F80-DE13F7685DDE}

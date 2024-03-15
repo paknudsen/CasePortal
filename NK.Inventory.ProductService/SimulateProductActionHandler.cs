@@ -1,4 +1,5 @@
 ﻿using NK.Data.Repositories.Entities;
+using NK.Service.Messages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +8,6 @@ using System.Threading.Tasks;
 
 namespace NK.Inventory.ProductService
 {
-    public class SimulateProductActionMessage
-    {
-        public int ProductId {  get; set; }
-    }
 
     public class SimulateProductActionHandler : IHandleMessages<SimulateProductActionMessage>
     {

@@ -1,4 +1,5 @@
 ﻿
+using NK.Web.CasePortal.Controls.Base.Models;
 using NK.Web.CasePortal.Controls.ProductList.Models;
 
 namespace NK.Web.CasePortal.Controls.ProductList
@@ -20,7 +21,15 @@ namespace NK.Web.CasePortal.Controls.ProductList
         public ProductListViewModel CreateFrom()
         {
             var viewModel = new ProductListViewModel();
-            viewModel.Products = _productListViewModelFactoryData.GetAllProducts();
+            var products = _productListViewModelFactoryData.GetAllProducts();
+
+            viewModel.Products = products.Select(t => new ProductViewModel(t.ProductId.ToString())
+            {
+                Name = t.Name,
+                Description = t.ShortDescription,
+                SalesPrice = (decimal)t.FinalSalesPrice,
+                ImageUrl = t.ImageLargeUrl,
+            }).ToList(); ;
 
             return viewModel;
         }
