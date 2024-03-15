@@ -1,5 +1,4 @@
 ﻿using NK.Data.Repositories.Entities;
-using NK.DataRepositories;
 using NK.Web.CasePortal.Controls.Base.Models;
 
 namespace NK.Web.CasePortal.Controls.ProductList
@@ -13,20 +12,14 @@ namespace NK.Web.CasePortal.Controls.ProductList
     {
         public List<ProductViewModel> GetAllProducts()
         {
-            using (var repo = new ProductRepository())
-            {
-                var products = repo.Products.Get().Select(t => new ProductViewModel(t.ProductId.ToString())
-                {
-                    Name = t.Name,
-                    Description = t.ShortDescription,
-                    SalesPrice = (decimal)t.FinalSalesPrice,
-                    ImageUrl = t.ImageLargeUrl,
-                }).ToList();
+            var list = new List<ProductViewModel>();
 
-                return products;
+            for (int i = 0; i < 10; i++) {
+                var product = new ProductViewModel($"PATEST {i}");
+                product.SalesPrice = i;
+                list.Add(product);  
             }
+            return list;
         }
-
-
     }
 }

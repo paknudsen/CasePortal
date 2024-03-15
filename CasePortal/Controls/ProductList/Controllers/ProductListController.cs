@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NK.Web.CasePortal.Controls.ProductList;
 using System.Diagnostics;
 
-namespace NK.Web.CasePortal.Controls.Home.Controllers
+namespace NK.Web.CasePortal.Controls.ProductList
 {
     [Route("ProductList")]
     public class ProductListController : Controller
@@ -15,10 +14,10 @@ namespace NK.Web.CasePortal.Controls.Home.Controllers
         }
 
         [Route("")]
-        public IActionResult Index()
+        public IActionResult ProductList()
         {
             var viewModel = new ProductListViewModelFactory().CreateFrom();
-            return (IActionResult)viewModel;
+            return View(viewModel);
         }
     }
 }

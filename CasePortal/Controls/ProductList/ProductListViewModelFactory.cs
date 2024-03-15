@@ -12,6 +12,12 @@ namespace NK.Web.CasePortal.Controls.ProductList
     {
         private readonly IProductListViewModelFactoryData _productListViewModelFactoryData;
 
+        // Non DI constructor
+        public ProductListViewModelFactory()
+        {
+              _productListViewModelFactoryData = new ProductListViewModelFactoryData();
+        }
+
         public ProductListViewModelFactory(IProductListViewModelFactoryData productListViewModelFactoryData)
         {
             _productListViewModelFactoryData = productListViewModelFactoryData;
