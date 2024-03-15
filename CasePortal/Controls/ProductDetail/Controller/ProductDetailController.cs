@@ -4,16 +4,16 @@ using System.Net;
 
 namespace NK.Web.CasePortal.Controls.ProductDetail
 {
-    [Route("ProductDetail")]
+    
     public class ProductDetailController : Controller
     {
 
-        [Route("{productid?}")]
-        public IActionResult ProductDetail(string? id)
+        [Route("ProductDetail/{id?}")]
+        public IActionResult Index(string? id)
         {
             if (id == null) return NotFound();
 
-            return View(new ProductDetailViewModel("TestProduct"));
+            return View("ProductDetail",new ProductDetailViewModel("TestProduct"));
         }
     }
 }
