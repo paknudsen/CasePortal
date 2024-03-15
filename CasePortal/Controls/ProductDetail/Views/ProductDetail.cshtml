@@ -1,12 +1,8 @@
 ﻿@{
-    ViewData["Title"] = Model.Name;
+    ViewData["Title"] = @Model.Product.Name;
 }
-
 @model NK.Web.CasePortal.Controls.ProductDetail.Models.ProductDetailViewModel
-<br />
-<br />
-<br />
 
-<h1>Model.Name</h1>
-<img src="@Model.ImageUrl" alt="Image displaying product " />
-<p>@Model.Description</p>
+<h3>@Model.Product.Name</h3> 
+<img src="@Model.Product.ImageUrl" alt="Image displaying product" />
+<p>@Model.Product.Description</p>

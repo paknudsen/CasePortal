@@ -2,16 +2,13 @@
 
 namespace NK.Web.CasePortal.Controls.ProductDetail.Models
 {
-    public class ProductDetailViewModel : ProductViewModel
+    public class ProductDetailViewModel
     {
-        public ProductDetailViewModel(string productId) : base(productId)
-        { }
+        public ProductViewModel Product { get; set; }
 
-        public ProductDetailViewModel(ProductViewModel product) : base(product.ProductId)
+        public ProductDetailViewModel(ProductViewModel product)
         { 
-        
-
+            Product = product;
         }
-
     }
 }
