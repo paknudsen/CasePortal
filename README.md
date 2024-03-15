@@ -13,6 +13,13 @@ Web application is based on a ASP.NET Core MVC Web App template, with some of ou
 3. Restore NPM packages
 4. Make sure project builds and runs (if you have any issues, follow instructions in email)
 5. Implement the requirements outlined pr email
+## NServiceBus setup
+It's required to add a License xml file to the local app data folder in order to send/receive messages on the NServiceBus. 
+The license file is included in the solution under the Configuration folder. This needs to copied to a new folder (ParticularSoftware) in you local app data folder.
+
+For Windows cmd.exe:
+mkdir %LocalAppData%\ParticularSoftware 2> NUL
+copy /Y license.xml %LocalAppData%\ParticularSoftware
 
 ## Delivery of finished case
 1. Delete the node_modules folder from your finished project.
