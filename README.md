@@ -1,11 +1,11 @@
 # Brandsdal Group CasePortal
-If you found this you likely got a second a second job interview at Brandsdal Group.
+If you're reading this you likely got a second job interview at Brandsdal Group coming up.
 
 ## Background
 This is a simplified version of how a web application is typically structured in Brandsdal Group.
 It is meant to give a more relevant case envrionment than "New Project" would do.
 
-Its based on a ASP.NET Core Web App (MVC) with some of our internal adaptations of structure and setup.
+Web application is based on a ASP.NET Core MVC Web App template, with some of our adaptations for structure and setup.
 
 ## Getting Started
 1. Clone project (avoid using a fork as the fork will be publicly visible)
