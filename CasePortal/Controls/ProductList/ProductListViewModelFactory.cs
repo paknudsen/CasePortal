@@ -3,29 +3,18 @@ using NK.Web.CasePortal.Controls.ProductList.Models;
 
 namespace NK.Web.CasePortal.Controls.ProductList
 {
-    public interface IProuctListViewModelFactory
+    public interface IProductListViewModelFactory
     {
         ProductListViewModel CreateFrom();
     }
 
-    public class ProductListViewModelFactory
+    public class ProductListViewModelFactory: IProductListViewModelFactory
     {
         private readonly IProductListViewModelFactoryData _productListViewModelFactoryData;
-
-        // Non DI constructor
-        public ProductListViewModelFactory()
-        {
-              _productListViewModelFactoryData = new ProductListViewModelFactoryData();
-        }
 
         public ProductListViewModelFactory(IProductListViewModelFactoryData productListViewModelFactoryData)
         {
             _productListViewModelFactoryData = productListViewModelFactoryData;
-        }
-
-        public ProductListViewModelFactory():this(new ProductListViewModelFactoryData())
-        {
-
         }
 
         public ProductListViewModel CreateFrom()
