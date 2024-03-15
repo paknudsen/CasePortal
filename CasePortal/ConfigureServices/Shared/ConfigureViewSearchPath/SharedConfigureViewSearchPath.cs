@@ -1,6 +1,6 @@
 ﻿using NK.BusinessProcess.Web.ConfigureViewSearchPathCore;
 
-namespace CasePortal.ConfigureServices.Administration.ConfigureViewSearchPath
+namespace NK.Web.CasePortal.ConfigureServices.Administration.ConfigureViewSearchPath
 {
     public class SharedConfigureViewSearchPath : ConfigureViewSearchPathBase
     {

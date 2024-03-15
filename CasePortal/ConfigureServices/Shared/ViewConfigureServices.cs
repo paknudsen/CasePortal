@@ -1,6 +1,6 @@
 ﻿using NK.BusinessProcess.Web.View;
 
-namespace CasePortal.ConfigureServices.Shared
+namespace NK.Web.CasePortal.ConfigureServices.Shared
 {
     public class ViewConfigureServices : IConfigureServices
     {

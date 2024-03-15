@@ -1,9 +1,7 @@
-using CasePortal.ConfigureServices;
-using Microsoft.AspNetCore.Hosting;
+using NK.Web.CasePortal.ConfigureServices;
 using NK.BusinessProcess.Core.Json;
 using NK.BusinessProcess.Web.ConfigureViewSearchPathCore;
 using System.Reflection;
-using System.Security.AccessControl;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);

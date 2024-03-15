@@ -2,6 +2,23 @@
     ViewData["Title"] = "Product List";
 }
 
-<div class="text-center">
-    
-</div>
+@model NK.Web.CasePortal.Controls.ProductList.Models.ProductListViewModel
+
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Price</td>
+        </tr>
+    </thead>
+    @{
+        foreach (var item in Model.Products)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.SalesPrice</td>
+                <td><a asp-asp-controller="ProductDetail" asp-action="Index" asp-route-id="@item.ProductId">@item.ProductId</a>  </td>
+            </tr>
+        }
+    }
+</table>

@@ -1,7 +1,6 @@
-﻿using CasePortal.ConfigureServices;
-using NK.Utils.DateTimeUtil;
+﻿using NK.Utils.DateTimeUtil;
 
-namespace CasePortal.ConfigureServices.Shared
+namespace NK.Web.CasePortal.ConfigureServices.Shared
 {
     public class UtilConfigureServices : IConfigureServices
     {

@@ -1,8 +1,8 @@
-﻿using CasePortal.Controls.Base.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using NK.Web.CasePortal.Controls.Base.Models;
 using System.Diagnostics;
 
-namespace CasePortal.Controls.Home.Controllers
+namespace NK.Web.CasePortal.Controls.Home.Controllers
 {
     [Route("")]
     public class HomeController : Controller

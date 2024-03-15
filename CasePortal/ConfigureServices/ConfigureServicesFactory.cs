@@ -1,6 +1,6 @@
 ﻿using NK.Utils.TypeUtil;
 
-namespace CasePortal.ConfigureServices
+namespace NK.Web.CasePortal.ConfigureServices
 {
     public interface IConfigureServices
     {

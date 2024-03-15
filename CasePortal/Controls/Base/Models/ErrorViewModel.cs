@@ -1,4 +1,4 @@
-namespace CasePortal.Controls.Base.Models
+namespace NK.Web.CasePortal.Controls.Base.Models
 {
     public class ErrorViewModel
     {

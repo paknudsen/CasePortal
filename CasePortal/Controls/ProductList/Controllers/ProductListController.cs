@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace CasePortal.Controls.Home.Controllers
+namespace NK.Web.CasePortal.Controls.Home.Controllers
 {
     [Route("ProductList")]
     public class ProductListController : Controller
