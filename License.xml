@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license type="Non-Production Development" Applications="All" expiration="2024-06-13" id="31f763a4-8d53-4fc9-b9f8-23d5286d4721">
+  <name>odd.erik.gronberg@brandsdalgroup.com</name>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>OHUdXCud+3AC0Rh+IKmDwF3TtMw=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>nAJRrYc+DnKhlMdn2cErWd7rerpInZRiWvdXK18iUsHy9QgLqezIAIiUdWIKgRJWAUs6DR4DzfP5bywoYubG8DeyRhEk6ahhCn7s+bu/N+l3yFGlZ1+HM4y8gHOcsuvkdiYhW/6UeFsN6qMNFD2gcM6tNFfIPF+E8HA4NltzwoM=</SignatureValue>
+  </Signature>
+</license>

@@ -16,7 +16,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{C9932AAD-5C15-48BD-8256-45CF63DDCA51}"
 	ProjectSection(SolutionItems) = preProject
 		ContextConfigurationSection.config = ContextConfigurationSection.config
-		..\..\Users\odd.erik.gronberg\AppData\Local\ParticularSoftware\License.xml = ..\..\Users\odd.erik.gronberg\AppData\Local\ParticularSoftware\License.xml
+		License.xml = License.xml
 		products.json = products.json
 	EndProjectSection
 EndProject
@@ -32,11 +32,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NK.Inventory.ProductService
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{14569FDA-1C0F-4D3C-B28E-19057C4B9FE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NK.Inventory.Test", "NK.Inventory.Test\NK.Inventory.Test.csproj", "{871A8D73-F14A-4147-951B-F70C8CA393E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NK.Inventory.Test", "NK.Inventory.Test\NK.Inventory.Test.csproj", "{871A8D73-F14A-4147-951B-F70C8CA393E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NK.Messages", "NK.Messages", "{D4DE067A-08AE-4EB8-9F44-A1EDB0859AD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NK.Service.Messages", "NK.Service.Messages\NK.Service.Messages.csproj", "{6104FE05-6395-44B2-A7C1-B57D0A431B0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NK.Service.Messages", "NK.Service.Messages\NK.Service.Messages.csproj", "{6104FE05-6395-44B2-A7C1-B57D0A431B0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
