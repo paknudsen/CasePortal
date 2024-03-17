@@ -23,7 +23,7 @@ namespace NK.Web.CasePortal.Controls.ProductDetail
 
             if(model == null) return NotFound();
 
-            return View("ProductDetail", _productDetailModelFactory.CreateFrom(int.Parse(id)));
+            return View("ProductDetail", model);
         }
     }
 }
