@@ -3,7 +3,7 @@ If you're reading this you likely got a second job interview at Brandsdal Group 
 
 ## Background
 This is a simplified version of how a web application is typically structured in Brandsdal Group.
-It is meant to give a more relevant case envrionment than "New Project" would do.
+It is meant to give a more relevant case environment than "New Project" would do.
 
 Web application is based on a ASP.NET Core MVC Web App template, with some of our adaptations for structure and setup.
 
