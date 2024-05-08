@@ -29,6 +29,8 @@ namespace NK.Web.CasePortal.Controls.ProductList
                 Description = t.ShortDescription,
                 SalesPrice = (decimal)t.FinalSalesPrice,
                 ImageUrl = t.ImageLargeUrl,
+                AverageRatingFormatted = t.AverageRatingFormatted,
+                NumberOfRatings = t.NumberOfRatings
             }).ToList(); ;
 
             return viewModel;

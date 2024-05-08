@@ -29,7 +29,8 @@ namespace NK.Data.Repositories.Extensions
                 AverageRatingFormatted = t.Source.AverageRatingFormatted,
                 ImageLargeUrl = t.Source.ImageLargeUrl,
                 ManufacturerLogo = t.Source.ManufacturerLogo,
-                ShortDescription = t.Source.ShortDescription
+                ShortDescription = t.Source.ShortDescription,
+                NumberOfRatings = t.Source.NumberOfRatings
             });
 
             repo.Add(entityProducts);
@@ -65,5 +66,8 @@ namespace NK.Data.Repositories.Extensions
 
         [JsonProperty("averageRatingFormatted")]
         public string AverageRatingFormatted { get; set; }
+
+        [JsonProperty("numberOfRatings")]
+        public int NumberOfRatings { get; set; }
     }
 }

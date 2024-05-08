@@ -5,7 +5,11 @@
 @model NK.Web.CasePortal.Controls.ProductList.Models.ProductListViewModel
 
 @section Styles {
-    <link href="/css/views/productlist/productlist.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/views/productlist/productlist.css" asp-append-version="true" />
+}
+
+@section Scripts {
+    <script src="/js/views/productlist/productlist.js" asp-append-version="true" defer></script>
 }
 
 <table class="table productlist-table">

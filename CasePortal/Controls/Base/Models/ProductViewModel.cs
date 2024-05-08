@@ -12,6 +12,10 @@
 
         public string Description { get; set; }
 
+        public string AverageRatingFormatted { get; set; }
+
+        public int NumberOfRatings { get; set; }
+
 
         public ProductViewModel(string productId)
         {

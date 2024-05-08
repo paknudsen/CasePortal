@@ -47,6 +47,9 @@
     </None>
   </ItemGroup>
 
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TypeScriptTarget>ES6</TypeScriptTarget>
+  </PropertyGroup>
 	<PropertyGroup>
 		<CompileDependsOn>
 			$(CompileDependsOn);

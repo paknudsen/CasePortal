@@ -18,6 +18,7 @@ namespace NK.Data.Repositories.Entities
         public string ShortDescription { get; set; }
         public double FinalSalesPrice { get; set; }
         public string AverageRatingFormatted { get; set; }
+        public int NumberOfRatings { get; set; }
 
         // Simulation of property updated from service
         public bool SimulateServiceProcessProperty { get; set; }

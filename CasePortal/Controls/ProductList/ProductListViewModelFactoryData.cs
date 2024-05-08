@@ -11,21 +11,6 @@ namespace NK.Web.CasePortal.Controls.ProductList
 
     public class ProductListViewModelFactoryData : IProductListViewModelFactoryData
     {
-        //public List<ProductViewModel> GetAllProducts()
-        //{
-        //    using (var repo = new ProductRepository())
-        //    {
-        //        var products = repo.Products.Get().Select(t => new ProductViewModel(t.ProductId.ToString())
-        //        {
-        //            Name = t.Name,
-        //            Description = t.ShortDescription,
-        //            SalesPrice = (decimal)t.FinalSalesPrice,
-        //            ImageUrl = t.ImageLargeUrl,
-        //        }).ToList();
-
-        //        return products;
-        //    }
-        //}
         public List<Product> GetAllProducts()
         {
             using (var repo = new ProductRepository())
